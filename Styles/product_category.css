@@ -1,0 +1,26 @@
+#conatiner{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10%;
+}
+#c_filter{
+    width: 28%;
+    border: 5px solid blue;
+}
+#c_products{
+    width: 68%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2%;
+}
+
+#c_products>div {
+    border: 1px solid black;
+    padding: 3%;
+    text-align: center;
+}
+#c_products>div img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}

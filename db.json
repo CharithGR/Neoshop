@@ -1,0 +1,12 @@
+{
+  "SignUP": [
+    {
+      "name": "q",
+      "email": "123@12",
+      "password": "12345!Aa",
+      "userType": "User",
+      "id": 1
+    }
+  ],
+  "Login": []
+}

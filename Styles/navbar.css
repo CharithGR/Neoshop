@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+#hari_navbar_1 {
+  width: 100%;
+  /* border: 1px solid red; */
+  position: fixed;
+  top: 0;
+
+  padding: 10px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#hari_logo {
+  /* border: 1px solid red; */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hari_logo > a > img {
+  width: 40%;
+  margin: auto;
+  margin-left: 20%;
+  /* border: 1px solid red; */
+}
+#hari_nav_buttons {
+  /* border: 1px solid red; */
+  flex: 1.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+#hari_user_buttons {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#hari_user_buttons > div > svg {
+  width: 70%;
+}
+/*  */
+#hari_list_a {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#hari_list_a > li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  font-size: 90%;
+}
+#hari_list_a > li > a {
+  color: grey;
+  text-decoration: none;
+  display: block;
+}
+.dropdown {
+  position: absolute;
+  width: 140%;
+  list-style: none;
+  text-align: left;
+  visibility: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+.dropdown > li > a {
+  margin-left: -10px;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+#hari_list_a > li > a {
+  color: black;
+}
+#hari_list_a > li > a:hover {
+  color: coral;
+  text-decoration: underline;
+}
+
+#hari_categories a {
+  color: black;
+}
+#hari_categories a:hover {
+  color: coral;
+}
+#hari_categories:hover > .dropdown {
+  visibility: visible;
+  top: 100%;
+  color: red;
+}
+
+.dropdown_a {
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  text-align: left;
+  visibility: hidden;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: -40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  z-index: 2;
+}
+#hari_list_a:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+#hari_list_b:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+
+#hari_list_c:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+#hari_list_d:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+#hari_list_e:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+#hari_list_f:hover > .dropdown_a {
+  left: 100%;
+  visibility: visible;
+}
+/* STYLES NAVBAR_2 */
+#hari_nav_design_2 {
+  width: 100%;
+}
+#hari_navbar_2 {
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  padding: 10px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#hari_ham {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#hari_logo_b {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hari_logo_b > a {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hari_user_buttons_b {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+  gap: 5px;
+}
+#hari_user_buttons_b > div > svg {
+  width: 70%;
+}
+/*  */
+#hari_logo_b > a > img {
+  width: 50%;
+}
+/*MEDIA QUERY */
+@media screen and (min-width: 1025px) {
+  #hari_nav_design_2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  #hari_navbar_1 {
+    display: none;
+  }
+  #hari_nav_design_2 {
+    display: block;
+  }
+}

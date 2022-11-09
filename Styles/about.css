@@ -1,0 +1,118 @@
+/* top image */
+#ak-about-header{
+   width: 95%;
+   margin: auto;
+   text-align: center;
+   margin-top: 0px;
+}
+#ak-about-header>img{
+    width: 100%;
+}
+
+
+/* for middle */
+#ak-about-middle{
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    margin-top: 130px;
+}
+p{
+   color: #7a7a7a;
+   font-family: sans-serif;
+
+}
+#ak-our-story{
+    font-size: 13px;
+}
+#ak-our-story+h1{
+color: #111111;
+font-size: 33px;
+font-family: sans-serif;
+}
+.ak-m-p{
+    line-height: 27px;
+    font-size: 19px;
+    font-family: sans-serif;
+
+}
+.ak-b-p{
+    font-size: 17px;
+    margin-top: 50px;
+}
+
+ /* for bottom */
+#ak-about-bottom{
+display: flex;
+width: 95%;
+margin: auto;
+justify-content: space-around;
+align-items: center;
+margin-top: 120px;
+line-height: 10px;
+
+}
+#ak-about-bottom>div{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    
+}
+h5{
+    color: #4a4848;
+    font-size: 12px;
+    font-family: sans-serif;
+
+}
+#ak-about-bottom p{
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+/* for medium screan */
+ @media all and (min-width:770px) and (max-width:1025px){
+    #ak-about-bottom{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 95%;
+        margin-top: 120px;
+        gap: 20px;
+        
+        }
+        #ak-about-bottom>div{
+            display: flex;
+            width: 90%;
+            justify-content: space-evenly;
+        }
+        #ak-about-middle{
+            width: 95%;
+            margin-top: 50px;
+        }
+        #ak-about-header{
+            width: 100%;
+        }
+
+ }
+ 
+ /* for small screan */
+
+ @media all and (min-width:50px) and (max-width:769px){
+    #ak-about-bottom{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 95%;
+        margin-top: 50px;
+        gap: 20px;        
+        }
+        #ak-about-bottom>div{
+            width: 100%;
+        }
+        #ak-about-middle{
+            width: 95%;
+            margin-top: 50px;
+        }
+        #ak-about-header{
+            width: 100%;
+        }
+
+ }

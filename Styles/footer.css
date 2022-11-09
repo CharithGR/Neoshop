@@ -1,0 +1,171 @@
+#ak-footer{
+    width: 100%;
+    background-image: url(../Images/ft-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+/* head */
+#ak-ft-head{
+    width: 100%;
+    text-align: center;
+    /* line-height: 30px; */
+}
+
+#ak-ft-head h2{
+    color: white;
+    font-family: Arial, sans-serif;
+}
+#ak-ft-mail{
+    padding: 18px 70px;
+    background-color: rgb(58, 57, 57);
+    border: none;
+}#ak-ft-mail~button{
+    padding: 15px 30px 17px 30px;
+    font-size: 15px;
+    background-color: rgb(65, 63, 63);
+    color: white;
+    border: none;
+} 
+#ak-ft-mail::placeholder {
+      font-size: 20px;
+      font-family:serif;
+      color: rgb(163, 163, 163);
+  }
+ hr{
+    border: 1px solid rgb(42,42,42);
+    margin-top: 25px;
+}
+#ak-ft-middle{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+#ak-ft-middle-logo{
+    width: 20%;
+}
+#ak-ft-middle img{
+    width: 100%;
+}
+#ak-ft-middle-right{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 10px;
+}
+#ak-ft-middle h5{
+  color: white;
+ font-family: sans-serif;
+}
+#ak-ft-middle p{
+    color: rgb(205,205,205);
+    font-family: sans-serif;
+    font-weight: 500;
+}
+#ak-fb{
+    color: white;
+    font-size:20px;
+}
+#ak-insta{
+    color: white;
+    font-size:20px;
+
+}
+#ak-ft-middle a{
+    font-style: none;
+    text-decoration: none;
+    color: rgb(205,205,205);
+    font-family: sans-serif;
+    font-weight: 500;
+
+
+}
+#ak-ft-middle-logo>a+div{
+    text-align: center;
+     display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+#ak-ft-bottom{
+    display: flex;
+    justify-content: space-around;
+}
+#ak-ft-bottom>div{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+
+}
+#ak-ft-bottom p{
+    color: rgb(205,205,205);
+    font-size: 13px;
+
+}
+#ak-ft-bottom>div:nth-child(1){
+    width: 70%;
+    text-align: left;
+}
+
+#ak-ft-bottom>div:nth-child(2){
+    width: 15%;
+   justify-content: space-evenly;
+}
+
+
+/* for underlining */
+.ak-ft-hover{
+    display: inline-block;
+    position: relative;
+   }   
+   .ak-ft-hover:after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 1px;
+   bottom: -5px;
+   left: 0;
+   background-color: #a3b49b;
+   color: #a3b49b;
+   transform-origin:left;
+   transition: transform 0.35s ease-out;
+   }
+   .ak-ft-hover:hover:after{
+   transform: scaleX(1);
+   }
+
+/* for mediam screen */
+@media all and (min-width:770px) and (max-width:980px){
+    #ak-ft-middle-right{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10px;
+        gap: 5%;
+    }
+    #ak-ft-bottom{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 4%;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+/* for small screan */
+@media all and (min-width:50px) and (max-width:769px){
+    #ak-ft-bottom{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 4%;
+        width: 70%;
+        margin: auto;
+
+    }
+    #ak-ft-middle-right{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10px;
+        gap: 5%;
+    }
+}

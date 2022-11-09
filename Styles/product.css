@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+#c_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+}
+
+#c_image_display,#c_content_display{
+    width: 45%;
+    border:1px solid black
+}
+
+#c_image_display img{
+    width: 100%;
+}
+select{
+    width: 100%;
+    height: 30px;
+}

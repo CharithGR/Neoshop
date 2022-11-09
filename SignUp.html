@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>SignUp</title>    
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #c_SignUp{
+            width: 30%;
+            margin: auto;
+        }
+        #c_SignUp>input, form>select{
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        #c_SignUp p{
+            margin-left: 20px;
+            margin-top: -15px;
+            color: red;
+            fill: red;
+        }        
+        #c_SignUp svg{
+            width: 2%;
+            display: inline;           
+        }    
+        #c_SignUp input[type="submit"]{
+            color: white;
+            background-color: black;
+            height: 40px;
+        } 
+    </style>
+</head>
+<body>
+    <form action="" id="c_SignUp">
+        <input type="text" id="c_name" placeholder="Name" required>
+        <input type="email" id="c_email" placeholder="Email" required>
+        <input type="password" id="c_password" placeholder="Password" required>
+        <div id="c_password_check">           
+           
+        </div>
+        <input type="password" id="c_confirmPassword" placeholder="Confirm Password" required>
+        <label for="">Why are you creating this account</label>
+        <select name="" id="c_userType">
+            <option value="User">To Buy Products</option>
+            <option value="Admin">To Sell Products</option>
+        </select>
+        <input type="submit" id="c_SignUp_btn" value="Sign UP">
+    </form>
+</body>
+</html>
+<script type="module" src="./Scripts/SignUp.js"></script>

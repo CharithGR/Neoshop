@@ -1,5 +1,101 @@
 const navbar = () => {
-  return `<div id="hari_navbar_1">
+  return `<div id="hari_wrapper">
+  <div id="hari_sidebar">
+    <div id="hari_sidebar_logo_and_btn">
+      <div>
+        <img
+          src="https://i.ibb.co/YhqGBny/IMG-20221109-002722-757-01.jpg"
+          alt="image is broken"
+        />
+      </div>
+      <div id="sidebar_close_btn"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <!-- ALL CATEGORY IN SIDEBAR -->
+    <div id="hari_sidebar_buttons">
+      <div><a href="#">Home</a></div>
+      <div><a href="#">About Us</a></div>
+      <div><a href="#">Shop</a></div>
+      <div id="hari_sidebar_categories">
+        <div><a href="#">Category</a></div>
+        <div><i class="fa-solid fa-chevron-up"></i></div>
+      </div>
+      <!-- ALL CATEGORIES IN SIDEBAR -->
+      <div id="hari_sidebar_categories_list">
+        <div id="clothing_sidebar_btn">
+          <p><a href="#">Clothing</a></p>
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div id="clothing">
+          <p><a href="#">Men's Fashion</a></p>
+          <p><a href="#">Women's Fashion</a></p>
+        </div>
+        <div id="footwear_sidebar_btn">
+          <p><a href="#">Footwear</a></p>
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div id="footwear">
+          <p><a href="#">Mens Sports Shoes & Sneakers</a></p>
+        </div>
+        <div id="electric_sidebar_btn">
+          <p><a href="#">Electric Appliances</a></p>
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div id="electric">
+          <p><a href="#">Philips Personal Care</a></p>
+          <p><a href="#">Trimmer</a></p>
+        </div>
+        <div id="health_sidebar_btn">
+          <p><a href="#">Health & Personal Care</a></p>
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div id="health">
+          <p><a href="#">Health Care</a></p>
+          <p><a href="#">Personal Care</a></p>
+        </div>
+        <div id="jewellery_sidebar_btn">
+          <p><a href="#">Jewellery</a></p>
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div id="jewellery">
+          <p><a href="#">Kada</a></p>
+          <p><a href="#">Necklace</a></p>
+          <p><a href="#">Ring</a></p>
+          <p><a href="#">Jewellery Set</a></p>
+        </div>
+        <div id="industrial_sidebar_btn">
+          <p><a href="#">Industrial Supplies</a></p>
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div id="industrial">
+          <p><a href="#">Bathroom Accessories</a></p>
+          <p><a href="#">Flour Mill</a></p>
+          <p><a href="#">Food Processing Machine</a></p>
+          <p><a href="#">Pulverizer</a></p>
+        </div>
+        <div id="kitchen_sidebar_btn">
+          <p><a href="#">Pulverizer</a></p>
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div id="kitchen">
+          <p><a href="#">Air Tight Containers</a></p>
+          <p><a href="#">Kitchen Tools</a></p>
+        </div>
+      </div>
+      <!--  -->
+      <div><a href="#">MS Smart Gadgets</a></div>
+      <div><a href="#">Contact Us</a></div>
+      <div id="social_connect">
+        <i class="fa-brands fa-facebook"></i
+        ><i class="fa-brands fa-instagram"></i>
+      </div>
+      <div id="cc"><p>© 2019 - 2022 UBORIC. ALL RIGHTS RESERVED.</p></div>
+    </div>
+  </div>
+  <!--  -->
+</div>
+
+<!-- NAVBAR 1 -->
+<div id="hari_navbar_1">
   <div id="hari_logo">
     <a href="#"
       ><img
@@ -75,7 +171,7 @@ const navbar = () => {
       <li><a href="#">Contact Us</a></li>
     </ul>
   </div>
-  <div id="hari_user_buttons">
+  <div id="hari_user_buttons_a">
     <div>
       <svg
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -167,7 +263,7 @@ const navbar = () => {
         ></path>
       </svg>
     </div>
-    <div>
+    <div id="cart">
       <svg
         xmlns:xlink="http://www.w3.org/1999/xlink"
         aria-hidden="true"
@@ -188,29 +284,16 @@ const navbar = () => {
         ></path>
       </svg>
     </div>
+    <div>
+      <span class="badge badge-warning" id="lblCartCount"> 0 </span>
+    </div>
   </div>
 </div>
 <!-- NAVBAR 2 -->
 <div id="hari_nav_design_2">
   <div id="hari_navbar_2">
     <div id="hari_ham">
-      <div id="hari_side_nav">
-        <svg
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          aria-hidden="true"
-          role="img"
-          focusable="false"
-          width="24"
-          height="18"
-          viewBox="0 0 24 18"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M24 0H0V2.10674H24V0Z" fill="#111111"></path>
-          <path d="M24 7.88215H0V9.98889H24V7.88215Z" fill="#111111"></path>
-          <path d="M24 15.8925H0V18H24V15.8925Z" fill="#111111"></path>
-        </svg>
-      </div>
+      <i class="fa-solid fa-bars"></i>
     </div>
     <div id="hari_logo_b">
       <a href="#"
@@ -288,30 +371,9 @@ const navbar = () => {
         </svg>
       </div>
       <div>
-        <svg
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          aria-hidden="true"
-          role="img"
-          focusable="false"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path
-            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-            stroke="#111111"
-            fill="none"
-            stroke-width="2px"
-          ></path>
-        </svg>
+        <i class="fa-regular fa-heart"></i>
       </div>
-      <div>
+      <div id="cart">
         <svg
           xmlns:xlink="http://www.w3.org/1999/xlink"
           aria-hidden="true"
@@ -332,9 +394,13 @@ const navbar = () => {
           ></path>
         </svg>
       </div>
+      <div>
+        <span class="badge badge-warning" id="lblCartCount"> 0 </span>
+      </div>
     </div>
   </div>
 </div>
+
 `;
 };
 export { navbar };

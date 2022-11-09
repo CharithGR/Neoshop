@@ -1,0 +1,28 @@
+#So_navbar{
+    width:100%;
+    height: 100px;
+}
+#So_carousel{
+    width: 100%;
+    height:auto;
+    border:1px solid red;
+    position:relative;
+
+}
+#So_carousel>img{
+    width:100%;
+}
+#So_btn{
+   
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+#So_btn>button{
+    font-size: 30px;
+    width:10%;
+    height: 50px;
+}

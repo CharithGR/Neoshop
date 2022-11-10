@@ -1,4 +1,10 @@
+import {navbar} from '../Components/navbar.js'
+let navbar_div=document.getElementById('So_navbar')
+navbar_div.innerHTML=navbar()
 
+import {footer} from '../Components/footer.js'
+let footer_div=document.getElementById('So_footer')
+footer_div.innerHTML=footer()
 
 let carousel_div=document.getElementById("So_carousel")
 
@@ -36,6 +42,15 @@ function slideshow(){
     
 }
 
+let button=document.getElementById('So_btt')
+button.onclick=()=>{
+    MinusDivs(-1)
+}
+
+let button1=document.getElementById('So_bpt')
+button1.onclick=()=>{
+    plusDivs(1)
+}
 
 function MinusDivs(i)
 {

@@ -169,7 +169,6 @@ const convert_to_numbers = (n) => {
 
 
 
-
 const display_products=(data)=>{
   let container=document.getElementById("c_similar_products")
   container.innerHTML=null
@@ -229,3 +228,4 @@ let a = cart_data.forEach((el)=>{
 console.group("hello")
 return false
 }
+

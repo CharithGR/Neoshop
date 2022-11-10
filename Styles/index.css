@@ -1,26 +1,30 @@
 #So_navbar{
     width:100%;
-    height: 100px;
+    height: 80px;
+    position: sticky;
 }
 #So_carousel{
     width: 100%;
     height:auto;
-    position:relative;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #So_carousel>img{
     width:100%;
     height: 500px;
 }
-#So_btn{
-   
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    
+#So_cut{
+    display: flex;
+    justify-content: space-evenly;
 }
+#So_cut>p{
+    text-decoration: line-through;
+}
+#So_cut>h3{
+    color:#FF6F61;
+}
+
 #So_btn>button:hover{
     cursor: pointer;
     background-color: white;
@@ -29,15 +33,15 @@
     font-size: 30px;
     background-color: #7F878E;
 }
-#So_bnt{
-    
-   
-   display: flex;
-   flex-direction: row-reverse;
-  
-   
-   
+#So_btt{
+    position: absolute;
 }
+#So_bpt{
+    position: absolute;
+    left:98%;
+    top:50%;
+}
+
 #So_bnt>button:hover{
     cursor: pointer;
     background-color: white;
@@ -113,6 +117,18 @@
     grid-template-columns: repeat(3,1fr);
     gap:15px;
 }
+.So_ttt>img:hover{
+    cursor: pointer;
+    content: url("https://www.uboric.com/wp-content/uploads/2022/08/photo_2022-02-24_12-22-08-370x370.jpg");
+}
+.So_ftt>img:hover{
+    cursor: pointer;
+    content: url("https://www.uboric.com/wp-content/uploads/2022/08/51it7ZuoqBL-270x270.jpg");
+}
+.So_mtt>img:hover{
+    cursor: pointer;
+    content: url("https://www.uboric.com/wp-content/uploads/2022/08/51ttBYWqRL-1-270x270.jpg");
+}
 
 .tet{
     text-align: center;
@@ -175,7 +191,17 @@
     width:100%;
     
  }
-
+ #So_liner{
+    width:80%;
+    border-start-end-radius: 0px;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+ }
+#So_cloth>p:hover{
+    text-decoration: underline;
+}
 
 
 

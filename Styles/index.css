@@ -1,0 +1,181 @@
+#So_navbar{
+    width:100%;
+    height: 100px;
+}
+#So_carousel{
+    width: 100%;
+    height:auto;
+    position:relative;
+
+}
+#So_carousel>img{
+    width:100%;
+    height: 500px;
+}
+#So_btn{
+   
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+#So_btn>button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+#So_btn>button{
+    font-size: 30px;
+    background-color: #7F878E;
+}
+#So_bnt{
+    
+   
+   display: flex;
+   flex-direction: row-reverse;
+  
+   
+   
+}
+#So_bnt>button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+#So_bnt>button{
+    font-size: 30px;
+    background-color: #7F878E;
+}
+#So_container{
+    width:100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap:10px;
+}
+#So_container>img{
+    width: 100%;
+    
+    opacity: 0.6;
+    height:300px;
+    background-size: cover;
+   
+}
+#So_container>img:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+#So_cloth{
+    height:150px;
+    text-align: center;
+    margin: auto;
+}
+#So_category{
+    height: 170px;
+    width:80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#So_products{
+    width:90%;
+    height: 450px;
+    display: flex;
+    margin: auto;
+    gap:20px;
+}
+#So_products>img{
+    width:100%;
+    height:350px;
+    cursor: pointer;
+}
+#So_product{
+    width:90%;
+    height: 450px;
+    display: flex;
+    margin: auto;
+    gap:20px;
+}
+#So_product>img{
+    width:100%;
+    height:350px;
+    cursor: pointer;
+}
+
+#So_selling{
+    
+    text-align: center;
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+}
+
+.tet{
+    text-align: center;
+    height: 100px;
+}
+.So_test{
+    text-align: center;
+    height: 100px;
+    margin-top: 50px; 
+}
+#So_arrive>img:hover{
+   cursor: pointer;
+   content: url("https://www.uboric.com/wp-content/uploads/2022/10/photo_2022-10-13_21-05-25-370x370.jpg");
+   
+}
+
+#So_arr>img:hover{
+    cursor: pointer;
+    content: url("https://www.uboric.com/wp-content/uploads/2022/10/photo_2022-10-13_21-05-25-150x150.jpg");
+    
+ }
+
+ #So_try>img:hover{
+    cursor: pointer;
+    content: url("https://www.uboric.com/wp-content/uploads/2022/10/Picsart_22-10-14_12-29-25-441-370x370.jpg");
+    
+ }
+ #So_fry>img:hover{
+    cursor: pointer;
+    content: url("https://www.uboric.com/wp-content/uploads/2022/10/photo_2022-10-13_20-22-24-2.jpg");
+    
+ }
+
+ #So_qry>img:hover{
+    cursor: pointer;
+    content: url("https://www.uboric.com/wp-content/uploads/2022/10/photo_2022-10-13_20-22-49-130x130.jpg");
+    
+ }
+ #So_cry>img:hover{
+    cursor: pointer;
+    content: url("https://www.uboric.com/wp-content/uploads/2022/10/photo_2022-10-13_20-22-52-2-130x130.jpg");
+    
+ }
+
+ #So_pry>img:hover{
+    cursor: pointer;
+    content: url("https://www.uboric.com/wp-content/uploads/2022/10/photo_2022-10-13_20-22-52-130x130.jpg");
+    
+ }
+
+ #So_arrivals{
+    width:100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap:5px;
+ }
+
+ #So_arrivals>div>img{
+    width:100%;
+    
+ }
+
+
+
+

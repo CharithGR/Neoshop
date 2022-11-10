@@ -1,9 +1,18 @@
 
+#ak-checkout-head{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+
+}
+
 #ak-checkout-container{
     display: flex;
     width: 80%;
     margin: auto;
     justify-content: space-between;
+    margin-bottom: 50px;
+
 }
 
 #ak-checkout-div{
@@ -17,12 +26,26 @@ sup{
     display: flex;
     justify-content: space-between;
 }
-#ak-checkout-container input,select,textarea,button{
-     width: 100%;
-     height: 40px;
+#ak-checkout-div input,#ak-order-div input{
+    width: 100%;
+     height: 50px;
      box-sizing: border-box;
-     border: 1px solid rgb(224, 223, 223);
+     border: 1px solid rgb(218, 218, 218);
      padding: 5px;
+}
+#ak-checkout-div textarea{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 5px;
+}
+#ak-checkout-div button,#ak-order-div button{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 5px;
 }
 #ak-checkout-container p{
      font-family: sans-serif;
@@ -48,13 +71,6 @@ textarea{
     font-size: 15px;
     height: 45px;
 }
-#ak-checkout-head{
-    width: 100%;
-    text-align: center;
-
-}
-
-
 /* for order div */
 #ak-order-div{
     width: 40%;
@@ -75,4 +91,33 @@ textarea{
 #ak-cart-cvv-div>div{
     width: 45%;
     justify-content: space-between;
+}
+ul{
+    list-style-type:square;
+    line-height: 200%;
+    color: rgb(100, 97, 97);
+
+}
+#ak-order-notes{
+    border: 2px solid;
+    border-radius: 3px ;
+    margin-top: 30px;
+}
+#ak-footer{
+    margin-top: 10px;
+}
+
+/* for mediam screen */
+@media all and (min-width:50px) and (max-width:980px){
+    #ak-checkout-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+    }
+    #ak-checkout-div{
+        width: 100%;
+        line-height: 7px;
+    }#ak-order-div{
+        width: 100%;
+    }
 }

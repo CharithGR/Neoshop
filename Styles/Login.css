@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+form{
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+}
+form input{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+input[type="submit"]{
+    height: 35px;
+}

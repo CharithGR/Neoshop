@@ -1,0 +1,334 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+#hari_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: transparent;
+}
+#hari_admin_sidebar {
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  z-index: 999;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#hari_admin_sidebar > div:nth-child(1) > div {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+#hari_admin_sidebar > div:nth-child(2) {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0px 15px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+#hari_admin_sidebar > div:nth-child(3) {
+  height: 40px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 0px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#hari_admin_sidebar > div:nth-child(2):hover {
+  background-color: rgba(128, 128, 128, 0.059);
+  color: coral;
+}
+#hari_admin_sidebar > div:nth-child(3):hover {
+  background-color: rgba(128, 128, 128, 0.059);
+  color: coral;
+}
+#hari_admin_sidebar > div:nth-child(1) > div > img {
+  width: 100%;
+}
+#hari_admin_right_upper {
+  background-color: #fff;
+  width: 85%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#hari_admin_right_upper > div {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#hari_admin_right_upper > div > svg {
+  width: 100%;
+}
+#hari_admin_right_lower_a {
+  margin-top: 80px;
+  width: 85%;
+  position: absolute;
+  right: 0;
+}
+#hari_admin_right_lower_a_inner {
+  width: 92%;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+#hari_admin_right_lower_b_inner {
+  width: 92%;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+#hari_admin_right_lower_c_inner {
+  width: 92%;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+#hari_admin_right_lower_c_inner > div:nth-child(1) {
+  width: 95%;
+  margin: auto;
+}
+#hari_admin_right_lower_c_inner > div:nth-child(1) > p {
+  font-size: ;
+}
+#name_of_admin_option {
+  margin-left: 25px;
+  font-size: 19px;
+  font-weight: 600;
+}
+#hari_admin_right_lower_b {
+  margin-top: 80px;
+  width: 85%;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+}
+/*  */
+#hari_filter_orders {
+  width: 92%;
+  margin: auto;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#hari_filter_orders > button {
+  width: auto;
+  width: auto;
+  height: 30px;
+  background-color: #f9fafb;
+  border: 1px solid #e6e8ec;
+  color: #6d7686;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#hari_filter_orders > button:hover {
+  background-color: #f2f4f6;
+}
+#hari_admin_order_table {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  font-size: 13px;
+  color: #808080;
+  padding: 4px;
+}
+td,
+th {
+  border-bottom: 0.5px dotted grey;
+  padding: 10px;
+}
+tbody > tr:hover {
+  background-color: #f9fafb;
+  cursor: pointer;
+}
+#hari_admin_products_top_bar {
+  width: 94%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+#hari_admin_products_top_bar > p {
+  font-size: 20px;
+}
+#add_products_bar {
+  width: 93%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#add_products_bar > div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 15px;
+  width: auto;
+  border: 1px solid #e6e8ec;
+  border: 1px solid cyna;
+  color: #6d7686;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#add_products_bar > div:hover {
+  background-color: #f9fafb;
+}
+/*  */
+#hari_admin_right_lower_c {
+  margin-top: 80px;
+  width: 85%;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+}
+/*  */
+#hari_addProduct_box_a,
+#hari_addProduct_box_b,
+#hari_addProduct_box_c,
+#hari_addProduct_box_d {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid cyan; */
+  gap: 40px;
+  margin-bottom: 50px;
+}
+#hari_addProduct_box_a > input,
+#hari_addProduct_box_d > input,
+#hari_addProduct_box_b > input,
+#hari_addProduct_box_c > input {
+  flex: 1;
+  padding: 15px;
+  outline: 4px solid rgba(255, 127, 80, 0.049);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 127, 80, 0.196);
+  font-size: 16px;
+}
+#hari_addProduct_box_a > input:hover,
+#hari_addProduct_box_d > input:hover,
+#hari_addProduct_box_b > input:hover,
+#hari_addProduct_box_c > input:hover {
+  outline: 4px solid rgba(255, 127, 80, 0.196);
+  border: 1px dotted coral;
+}
+#hari_addProduct_img_box_e {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+#hari_addProduct_img_box_e > input {
+  flex: 1;
+  padding: 15px;
+  outline: 4px solid rgba(255, 127, 80, 0.196);
+  border-radius: 10px;
+  border: 1px solid coral;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+input[type="file"] {
+  display: none;
+}
+#img_of_product {
+  flex: 1;
+  padding: 45px;
+  border-radius: 10px;
+  outline: 4px solid rgba(255, 127, 80, 0.059);
+  border: 1px dashed rgba(255, 127, 80, 0.323);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: coral;
+}
+#img_of_product:hover {
+  border: 1px dashed coral;
+}
+#hari_submit_data_button {
+  border: 2px solid coral;
+  width: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  cursor: pointer;
+  color: coral;
+  font-weight: 600;
+}
+#hari_submit_data_button:hover {
+  outline: 5px solid rgba(255, 127, 80, 0.244);
+}
+#hari_admin_right_lower_c_inner {
+  margin-bottom: 100px;
+}
+#hari_admin_right_lower_c_inner > div:nth-child(1) {
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 10px;
+}
+#hari_admin_right_lower_c_inner > div:nth-child(1) > p {
+  font-size: 13px;
+  color: #6d7686;
+}
+#hari_addProduct_desc_a {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 45px;
+}
+#hari_addProduct_desc_a > p {
+  width: 50%;
+  font-size: 14px;
+  color: #6d7686;
+}
+/*  */
+#hari_submit_data_button {
+  text-align: center;
+  display: none;
+}

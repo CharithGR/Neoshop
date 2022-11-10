@@ -5,17 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Category</title>
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
     <link rel="stylesheet" href="./Styles/product_category.css">
 </head>
 <body>
+    <div id="navbar"></div>
+
     <div id="conatiner">
     <div id="c_filter">
-        
+        <div id="c_Price">   
+       <h4>Price</h4>
+       <div><input type="checkbox"><span>₹1-₹499.00</span></div>
+       <div><input type="checkbox"><span>₹500.00-₹999.00</span></div>
+       <div><input type="checkbox"><span>₹1000.00+</span></div>
+    </div>     
+    <div>
+        <h4>Brand</h4>
+        <input type="search" placeholder="Search Product Brands">
     </div>
+     </div>
+    
     <div id="c_products">
-
     </div>
+
 </div>
+<div id="c_pagination"></div>
+
+<div id="footer"></div>
 </body>
 </html>
 <script type="module" src="./Scripts/product_category.js"></script>

@@ -40,7 +40,11 @@ window.onload=()=>{
     Add_to_Cart.onclick=()=>{
         if(size.value=="Choose An Option"){
             alert("Please select a Product Option before adding to cart")
+            return
         }
+        let Cart =JSON.parse(localStorage.getItem("Cart")) || []
+        Cart.push(el)
+        localStorage.setItem("Cart",JSON.stringify(Cart))
     }
     price_div.append(strike_price, price);
     content_div.append(title,price_div,size,Add_to_Cart);

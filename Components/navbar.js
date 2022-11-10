@@ -373,7 +373,7 @@ const navbar = () => {
       <div>
         <i class="fa-regular fa-heart"></i>
       </div>
-      <div id="cart">
+      <div id="cart_id">
         <svg
           xmlns:xlink="http://www.w3.org/1999/xlink"
           aria-hidden="true"

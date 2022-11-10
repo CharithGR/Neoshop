@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./Styles/checkout.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+        <div id="ak-checkout-head"><h2>Checkout</h2></div>
+
+    <div id="ak-checkout-container">
+      <div id="ak-checkout-div">
+          <h4>Billing details</h4>
+           <div id="ak-name">
+            <!-- name -->
+            <div>
+                    <p>First name<sup>*</sup></p>
+                    <input type="text" name="" id="ak-first-name">
+            </div>
+            <div id="ak-last-name-div">
+                    <p>Last name<sup>*</sup></p>
+                   <input type="text" name="" id="ak-last-name">
+            </div>
+           </div>
+           <div>
+                     <p>Company name (optional)</p>
+                     <input type="text" name="" id="ak-com-name">
+           </div>
+           <div>     
+                    <p>State/Region<sup>*</sup></p>
+                    <input type="text" name="" id="ak-region">
+           </div>
+           <div>
+                    <p>Street address<sup>*</sup></p>
+                    <input type="text" name="" id="ak-hs_no" placeholder="House number and street name">
+                    <br><br>
+                    <input type="text" name="" id="" placeholder="Apartment, slute,unit,etc.(optional)">
+           </div>
+           <div>     
+                    <p>Town/City<sup>*</sup></p>
+                    <input type="text" name="" id="ak-city">
+          </div>
+          <div>     
+                    <p>PIN Code<sup>*</sup></p>
+                    <input type="number" name="" id="ak-pin-code">
+          </div>
+          <div>     
+                   <p>Phone<sup>*</sup></p>
+                   <input type="number" name="" id="ak-phone">
+         </div>
+           <h4>Additional information</h4>
+         <div> 
+                   <p>Order notes(optional)</p>
+                   <textarea name="ak-notes" id="">Notes about your order e.g. Special notes for delivery</textarea>
+         </div>
+        </div>
+
+        <!-- ************ -->
+        <div id="ak-order-div">
+          <h4>Your order</h4>
+          <div id="ak-accepted-cards">
+              <p>Accepted Cards</p>
+              <img src="./Images/paypal.png" alt="">
+              <img src="./Images/rupay.jpg" alt="">
+              <img src="./Images/mastercart (2).jpg" alt="">
+              <img src="./Images/visa.jpg" alt="">
+          </div>
+          <div id="ak-cart-holder-div">
+                <p>Name Of Cart Holder<sup>*</sup></p>
+                <input type="text" name="" id="ak-cart-holder" placeholder="Cart Holder">
+          </div>
+          <div id="ak-cart-number-div">
+                <p>Credit Card Number<sup>*</sup></p>
+                <input type="number" name="" id="ak-cart-number" placeholder="2222-3333-4444">
+          </div>
+          <div id="ak-cart-exp-month-div">
+                <p>Exp Month<sup>*</sup></p>
+                <input type="text" name="" id="ak-cart-exp-month" placeholder="Enter Month">
+          </div>
+          <div id="ak-cart-cvv-div">
+                 <div>
+                        <p>Exp Year<sup>*</sup></p>
+                        <input type="number" name="" id="ak-cart-exp-year" placeholder="Enter Year">
+                 </div>
+                 <div>
+                        <p>CVV<sup>*</sup></p>
+                        <input type="number" name="" id="ak-cart-cvv" placeholder="1234">
+                 </div>
+          </div>
+          <button id="ak-place-order-btn">Place order</button>
+          <div id="ak-order-notes">
+                  <ul>
+                        <li>Guaranteed Delivery with 100% Original Products</li>
+                        <li>Cod is not Available on Some Categories</li>
+                        <li>For Online Payment Extra ₹5% Discount On Orders Above ₹500</li>
+                        <li>EMI Option Available</li>
+                        <li>To Avail More Bank Options on EMI Purchase Above RS. 3000</li>
+                        <li>Free Delivery On Orders Above 500 For Online Payment Free Delivery Available On All Orders</li>
+                        <li>Below ₹500 Cash On Delivery Charges ₹49</li>
+                  </ul>
+          </div>
+        </div>
+   </div>
+   <div id="ak-footer">
+
+   </div>
+</body>
+</html>
+<script type="module" src='./Scripts/checkout.js'></script>

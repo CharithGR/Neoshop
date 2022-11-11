@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./Styles/Login.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
 </head>
-<body>  
-        <form action="" id="c_login_form">
-        <input type="email" id="c_email" placeholder="Email" required>
-        <input type="password" id="c_password" placeholder="Password" required>
-        <span>Don't have an account? <a href="SignUp.html">SignUp</a></span>
-        <input type="submit" value="LOG IN">
-    </form>
+<body>  <div id="navbar"></div>
+        <div id="c_login">
+            <form action="" id="c_login_form">
+                <input type="email" id="c_email" placeholder="Email" required>
+                <input type="password" id="c_password" placeholder="Password" required>
+                <span>Don't have an account? <a id="ak_signUp" href="SignUp.html">SignUp</a></span>
+                <input type="submit" value="LOG IN">
+            </form>
+        </div>
 </body>
 </html>
-<script src="./Scripts/Login.js"></script>
+<script type="module" src="./Scripts/Login.js"></script>

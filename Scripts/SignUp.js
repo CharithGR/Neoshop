@@ -1,4 +1,7 @@
+import {navbar} from "../Components/navbar.js"
 
+
+    document.getElementById("navbar").innerHTML=navbar()
 
 window.onload=()=>{
     let password = document.getElementById("c_password")

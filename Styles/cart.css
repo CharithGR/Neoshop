@@ -53,3 +53,8 @@ h1{
 #So_checkout>div>button:hover{
     cursor: pointer;
 }
+.So_span{
+    width: 5%;
+    height:10px;
+    display: flex;
+}

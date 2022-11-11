@@ -105,9 +105,9 @@ const navbar = () => {
   </div>
   <div id="hari_nav_buttons">
     <ul id="hari_list_a">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Shop</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="product_category.html">Shop</a></li>
       <li id="hari_categories">
         <a href="#">Categories</a>
         <ul class="dropdown">
@@ -263,7 +263,7 @@ const navbar = () => {
         ></path>
       </svg>
     </div>
-    <div id="cart">
+    <a href="cart.html"><div id="cart">
       <svg
         xmlns:xlink="http://www.w3.org/1999/xlink"
         aria-hidden="true"
@@ -283,7 +283,7 @@ const navbar = () => {
           fill="#111111"
         ></path>
       </svg>
-    </div>
+    </div></a>
     <div>
       <span class="badge badge-warning" id="lblCartCount"> 0 </span>
     </div>

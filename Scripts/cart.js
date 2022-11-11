@@ -8,7 +8,12 @@ footer_div.innerHTML=footer();
 
 let data=JSON.parse(localStorage.getItem("Cart")) || []
 
-data.forEach((ele)=>{
+  
+data.forEach((ele,i)=>{
+
+ let So_container_div=document.createElement('div')
+ So_container_div.setAttribute("id","So_container1")
+
 let image_div=document.createElement('div')
 
 let image=document.createElement('img')
@@ -24,42 +29,65 @@ h2.innerText=ele.subtitle
 let p1=document.createElement('p')
 p1.innerText=`Size: ${ele.size[0]}`
 
-let button=document.createElement('div')
-button.className="So_span"
+let no_of_products_div = document.createElement("div");
+  no_of_products_div.setAttribute("id", "So_no_of_products");
+   let plus=document.createElement("button");
+   plus.innerHTML ="+"
+   
 
-let span=document.createElement('span')
-let pa=document.createElement('p')
-pa.innerText="- "
-span.append(pa)
-
-let span1=document.createElement('span')
-let input=document.createElement('input')
-input.type="number"
-input.display=ele.length
-span1.append(input)
-
-let span2=document.createElement('span')
-let pa1=document.createElement('p')
-pa1.innerText="+ "
-span2.append(pa1)
-
-button.append(span,span1,span2)
+   let no_of_products = document.createElement("button");
+   no_of_products.innerHTML=data.length
 
 
-title_div.append(h2,p1,button)
+   let minus=document.createElement("button");
+   minus.innerHTML ="-"
+
+   plus.onclick = ()=>{
+    data.length++
+    if(data.length>5){
+      data.length--
+      alert("You cannot buy more than 5 products for this Product")
+    }
+    no_of_products.innerHTML=data.length
+    show()
+    show1()
+  }
+
+  minus.onclick=()=>{
+    if(data.length>1)
+    {
+    data.length--
+    }
+    no_of_products.innerHTML=data.length
+    show()
+    show1()
+  }
+
+
+
+   no_of_products_div.append(minus,no_of_products,plus);
+
+
+title_div.append(h2,p1,no_of_products_div)
 
 let price_div=document.createElement('div')
 price_div.className="So_wtf"
+
 
 let p2=document.createElement('p')
 p2.innerText=`₹ ${ele.discounted_price}`
 
 let button1=document.createElement('button')
 button1.innerText="x Remove"
+button1.onclick=()=>{
+   localStorage.setItem("Cart",JSON.stringify(data.splice(i,1)))
+   So_container_div.innerHTML=null
+}
 
 price_div.append(p2,button1)
 
-let box_div=document.getElementById("So_box")
+let box_div=document.createElement("div")
+box_div.setAttribute('id','So_box')
 box_div.append(image_div,title_div,price_div)
 
 
@@ -73,6 +101,10 @@ pp.append(p3)
 let rupess=document.createElement('div')
 let p4=document.createElement('p')
 p4.innerText=`₹ ${ele.discounted_price}`
+function show()
+{
+p4.innerText=`₹ ${Number(ele.discounted_price)*data.length}`
+}
 rupess.append(p4)
 
 
@@ -90,6 +122,10 @@ ll.append(p5)
 let mm=document.createElement('div')
 let p6=document.createElement('p')
 p6.innerText=`₹ ${ele.discounted_price}`
+function show1()
+{
+p6.innerText=`₹ ${Number(ele.discounted_price)*data.length}`
+}
 mm.append(p6)
 
 total.append(ll,mm)
@@ -104,12 +140,18 @@ button2.onclick=()=>{
 }
 button_div.append(button2)
 
-let checkout_div=document.getElementById('So_checkout')
+let checkout_div=document.createElement('div')
+checkout_div.setAttribute("id","So_checkout")
 checkout_div.append(price,total,button_div)
 
 
+
+So_container_div.append(box_div,checkout_div)
+
 let container_div=document.getElementById('So_container')
-container_div.append(box_div,checkout_div)
+container_div.append(So_container_div)
 
 })
+
+
 

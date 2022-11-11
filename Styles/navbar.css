@@ -375,3 +375,6 @@ a {
     display: none;
   }
 }
+#cart svg{
+  width: 65%;
+}

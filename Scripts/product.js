@@ -68,7 +68,7 @@ window.onload = () => {
     let option = document.createElement("option");
     option.innerHTML = el.size[i];
     size.value = el.size;
-    el.size=size.value
+    // el.size=size.value
     size.append(option);
   }
   let no_of_products_div = document.createElement("div");
@@ -104,25 +104,46 @@ window.onload = () => {
 
 
 
-   no_of_products_div_child.append(plus,no_of_products,minus);
+   no_of_products_div_child.append(minus,no_of_products,plus);
    no_of_products_div.append(no_of_products_div_child)
   let cart_wish_div= document.createElement("div");
   cart_wish_div.setAttribute("id","cart_wish_div")
 
   let Add_to_Cart = document.createElement("button");
-  Add_to_Cart.innerHTML = "Add to Cart";
+  Add_to_Cart.innerHTML = ` <svg
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  aria-hidden="true"
+  role="img"
+  focusable="false"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M21.9353 20.0337L20.7493 8.51772C20.7003 8.0402 20.2981 7.67725 19.8181 7.67725H4.21338C3.73464 7.67725 3.33264 8.03898 3.28239 8.51523L2.06458 20.0368C1.96408 21.0424 2.29928 22.0529 2.98399 22.8097C3.66874 23.566 4.63999 24.0001 5.64897 24.0001H18.3827C19.387 24.0001 20.3492 23.5747 21.0214 22.8322C21.7031 22.081 22.0361 21.0623 21.9353 20.0337ZM19.6348 21.5748C19.3115 21.9312 18.8668 22.1275 18.3827 22.1275H5.6493C5.16836 22.1275 4.70303 21.9181 4.37252 21.553C4.042 21.1878 3.88005 20.7031 3.92749 20.2284L5.056 9.55014H18.9732L20.0724 20.2216C20.1223 20.7281 19.9666 21.2087 19.6348 21.5748Z"
+    fill="#111111"
+  ></path>
+  <path
+    d="M12.1717 0C9.21181 0 6.80365 2.40811 6.80365 5.36803V8.6138H8.67622V5.36803C8.67622 3.44053 10.2442 1.87256 12.1717 1.87256C14.0992 1.87256 15.6674 3.44053 15.6674 5.36803V8.6138H17.5397V5.36803C17.5397 2.40811 15.1316 0 12.1717 0Z"
+    fill="#111111"
+  ></path>
+</svg>Add to Cart`;
   Add_to_Cart.onclick = () => {
     if (size.value == "Choose An Option") {
       alert("Please select a Product Option before adding to cart");
       return;
     }
+    el.size=size.value
     el.Quantity=Total_Products
     let Cart = JSON.parse(localStorage.getItem("Cart")) || [];
-    if(check_if_product_already_in_cart(Cart,el)){
-      console.log("hi")
-    }
-    Cart.push(el);
+    if(check_if_product_already_in_cart(Cart,el) && Cart.length>0){
+      localStorage.setItem("Cart", JSON.stringify(Cart));
+    }else{
+      Cart.push(el);
     localStorage.setItem("Cart", JSON.stringify(Cart));
+    }
+    
   };
 
   let wishlist = document.createElement("button");
@@ -220,12 +241,25 @@ const display_products=(data)=>{
 
 const check_if_product_already_in_cart =(cart_data,el1)=>{
 
-let a = cart_data.forEach((el)=>{
-  if(el.subtitle==el1.subtitle && el.title==el1.title && el.size==el1.size){
+let a = cart_data.filter((el)=>{
+  
+    if(el.subtitle==el1.subtitle && el.title==el1.title && el.size==el1.size){
+     
+      el.Quantity+=el1.Quantity;
+      console.log(el.Quantity);
+      if(el.Quantity>5){
+        el.Quantity=5
+        alert("Product already in cart, Quantity increased to 5.You cannot buy more than 5 items of this product")
+      }else{
+        alert(`Product already in cart, Quantity increased to ${el.Quantity}`)
+      }
       return true
-  }
+    }
+
 })
-console.group("hello")
+if(a.length>0){  
+  return true
+}
 return false
 }
 

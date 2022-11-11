@@ -118,9 +118,9 @@ body {
   width: 95%;
   margin: auto;
 }
-#hari_admin_right_lower_c_inner > div:nth-child(1) > p {
+/* #hari_admin_right_lower_c_inner > div:nth-child(1) > p {
   font-size: ;
-}
+} */
 #name_of_admin_option {
   margin-left: 25px;
   font-size: 19px;
@@ -331,4 +331,20 @@ input[type="file"] {
 #hari_submit_data_button {
   text-align: center;
   display: none;
+}
+
+
+
+
+/* append data */
+#ak-append-con img{
+  width: 100%;
+}
+#ak-pro-append{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+#ak-text{
+  margin-left: 30px;
 }

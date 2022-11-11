@@ -5,19 +5,10 @@
     margin-top: 60px;
 
 }
-
-#ak-checkout-container{
-    display: flex;
-    width: 80%;
-    margin: auto;
-    justify-content: space-between;
-    margin-bottom: 50px;
-
-}
-
 #ak-checkout-div{
-    width: 55%;
+    width: 45%;
     line-height: 7px;
+    margin: auto;
 }
 sup{
     color: red;
@@ -47,7 +38,15 @@ sup{
     border: 1px solid rgb(218, 218, 218);
     padding: 5px;
 }
-#ak-checkout-container p{
+#ak-checkout-div select{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 5px;
+    margin-top: 20px;
+}
+#ak-checkout-div p{
      font-family: sans-serif;
         
 }
@@ -66,10 +65,11 @@ textarea{
 }
 #ak-place-order-btn{
     margin-top: 20px;
-    background-color: black;
-    color: white;
     font-size: 15px;
     height: 45px;
+}
+#ak-place-order-btn:hover{
+    background-color: antiquewhite;
 }
 /* for order div */
 #ak-order-div{
@@ -105,19 +105,4 @@ ul{
 }
 #ak-footer{
     margin-top: 10px;
-}
-
-/* for mediam screen */
-@media all and (min-width:50px) and (max-width:980px){
-    #ak-checkout-container{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        width: 90%;
-    }
-    #ak-checkout-div{
-        width: 100%;
-        line-height: 7px;
-    }#ak-order-div{
-        width: 100%;
-    }
 }

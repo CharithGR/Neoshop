@@ -13,10 +13,10 @@
 
 </head>
 <body>
+
+      <div id="ak-checkout-div">
         <div id="ak-checkout-head"><h2>Checkout</h2></div>
 
-    <div id="ak-checkout-container">
-      <div id="ak-checkout-div">
           <h4>Billing details</h4>
            <div id="ak-name">
             <!-- name -->
@@ -60,54 +60,20 @@
                    <p>Order notes(optional)</p>
                    <textarea name="ak-notes" id="">Notes about your order e.g. Special notes for delivery</textarea>
          </div>
-        </div>
+          <div>
+                   <select name="" id="ak-select-card-type">
+                        <option value="">Select Payment Option</option>
+                        <option value="">Cash On Delivery (Not Available)</option>
+                        <option value="UPI">UPI</option>
+                        <option value="Credit">Credit Card</option>
+                        <option value="Debit">Debit Card</option>
 
-        <!-- ************ -->
-        <div id="ak-order-div">
-          <h4>Your order</h4>
-          <div id="ak-accepted-cards">
-              <p>Accepted Cards</p>
-              <img src="./Images/paypal.png" alt="">
-              <img src="./Images/rupay.jpg" alt="">
-              <img src="./Images/mastercart (2).jpg" alt="">
-              <img src="./Images/visa.jpg" alt="">
+                   </select>
           </div>
-          <div id="ak-cart-holder-div">
-                <p>Name Of Cart Holder<sup>*</sup></p>
-                <input type="text" name="" id="ak-cart-holder" placeholder="Cart Holder">
-          </div>
-          <div id="ak-cart-number-div">
-                <p>Credit Card Number<sup>*</sup></p>
-                <input type="number" name="" id="ak-cart-number" placeholder="2222-3333-4444">
-          </div>
-          <div id="ak-cart-exp-month-div">
-                <p>Exp Month<sup>*</sup></p>
-                <input type="text" name="" id="ak-cart-exp-month" placeholder="Enter Month">
-          </div>
-          <div id="ak-cart-cvv-div">
-                 <div>
-                        <p>Exp Year<sup>*</sup></p>
-                        <input type="number" name="" id="ak-cart-exp-year" placeholder="Enter Year">
-                 </div>
-                 <div>
-                        <p>CVV<sup>*</sup></p>
-                        <input type="number" name="" id="ak-cart-cvv" placeholder="1234">
-                 </div>
-          </div>
-          <button id="ak-place-order-btn">Place order</button>
-          <div id="ak-order-notes">
-                  <ul>
-                        <li>Guaranteed Delivery with 100% Original Products</li>
-                        <li>Cod is not Available on Some Categories</li>
-                        <li>For Online Payment Extra ₹5% Discount On Orders Above ₹500</li>
-                        <li>EMI Option Available</li>
-                        <li>To Avail More Bank Options on EMI Purchase Above RS. 3000</li>
-                        <li>Free Delivery On Orders Above 500 For Online Payment Free Delivery Available On All Orders</li>
-                        <li>Below ₹500 Cash On Delivery Charges ₹49</li>
-                  </ul>
+          <div>
+                   <button id="ak-place-order-btn">Proceed To Payment</button>
           </div>
         </div>
-   </div>
    <div id="ak-footer">
 
    </div>

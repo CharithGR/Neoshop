@@ -12,7 +12,6 @@
 }
 #c_filter{
     width: 28%;
-    border: 5px solid blue;
     padding: 2%;
 }
 #c_products{
@@ -24,7 +23,6 @@
 }
 
 #c_products>div {
-    border: 1px solid black;
     padding: 3%;
     text-align: center;
 }
@@ -61,3 +59,8 @@ h3{
     cursor: pointer;
     border: 1px solid gray;
 }
+#BrandSearch{
+    height: 40px;
+    width: 70%;
+}
+

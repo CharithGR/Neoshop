@@ -14,7 +14,6 @@
 
 #c_image_display,#c_content_display{
     width: 45%;
-    border:1px solid black;
     padding: 1%;
 }
 /* #c_image_display:hover{

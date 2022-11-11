@@ -1,0 +1,23 @@
+#hari_list_a > li > a {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+}
+#hari_list_a > li > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  color: coral;
+  background-color: coral;
+  transition: width 0.15s ease-out;
+}
+#hari_list_a > li > a:hover {
+  color: coral;
+}
+#hari_list_a > li > a:hover::before {
+  width: 100%;
+}

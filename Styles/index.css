@@ -35,11 +35,24 @@
 }
 #So_btt{
     position: absolute;
+    border: none;
+    width:3%;
+}
+#So_bpp{
+    width:15%;
+    height:50px;
+    position: absolute;
+    left:45%;
+    color: white;
+    background-color: black;
+    font-size:  large;
 }
 #So_bpt{
     position: absolute;
-    left:98%;
+    width:3%;
+    left:97%;
     top:50%;
+    border: none;
 }
 
 #So_bnt>button:hover{
@@ -90,6 +103,54 @@
     margin: auto;
     gap:20px;
 }
+#So_hover{
+    position: absolute;
+    width:30%;
+    text-align: center;
+    background-color: white;
+    margin: 280px 80px;
+}
+#So_hover1{
+    position: absolute;
+    width:30%;
+    left: 52%;
+    text-align: center;
+    background-color: white;
+    margin: 280px 80px;
+}
+#So_hover2{
+    position: absolute;
+    width:30%;
+    text-align: center;
+    background-color: white;
+    margin: 280px 80px;
+}
+#So_hover3{
+    position: absolute;
+    width:30%;
+    left: 52%;
+    text-align: center;
+    background-color: white;
+    margin: 280px 80px;  
+}
+.ttt{
+    
+    z-index: -1
+}
+
+.ppp{
+    z-index: -1;
+}
+
+.www{
+    
+    z-index: -1;
+}
+
+.kkk{
+    z-index: -1;
+}
+
 #So_products>img{
     width:100%;
     height:350px;
@@ -193,7 +254,6 @@
  }
  #So_liner{
     width:80%;
-    border-start-end-radius: 0px;
     line-height: 30px;
     margin: auto;
     margin-top: 40px;
@@ -202,6 +262,51 @@
 #So_cloth>p:hover{
     text-decoration: underline;
 }
+#So_liner>p{
+    text-align: justify;
+}
+#So_bottom{
+    width:85%;
+    margin: auto;
+    display: flex;
+}
+#So_bottom>div{
+    width: 50%;
+    text-align: left;
+    line-height: 30px;
+}
+#So_bottom>div>img{
+    width:100%;
+}
+#So_bottom>div>button{
+    width:20%;
+    height:30px;
+    color: white;
+    background-color: black;
+    font-size:  large;
+    margin-top: 30px;
+}
+#So_bottom_last{
+    width:85%;
+    height:130px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#So_bottom_last>div{
+    display: flex;
+    justify-content: space-between;
+    width:23%;
+    gap:5px;
+}
+#So_bottom_last>div>div>img{
+    margin-top: 30px;
+}
+#So_iii{
+    margin-right: 40px;
+}
+
 
 
 

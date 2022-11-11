@@ -24,8 +24,27 @@ h2.innerText=ele.subtitle
 let p1=document.createElement('p')
 p1.innerText=`Size: ${ele.size[0]}`
 
-let button=document.createElement('button')
-button.innerText="- 1 +"
+let button=document.createElement('div')
+button.className="So_span"
+
+let span=document.createElement('span')
+let pa=document.createElement('p')
+pa.innerText="- "
+span.append(pa)
+
+let span1=document.createElement('span')
+let input=document.createElement('input')
+input.type="number"
+input.display=ele.length
+span1.append(input)
+
+let span2=document.createElement('span')
+let pa1=document.createElement('p')
+pa1.innerText="+ "
+span2.append(pa1)
+
+button.append(span,span1,span2)
+
 
 title_div.append(h2,p1,button)
 

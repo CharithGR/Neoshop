@@ -84,5 +84,28 @@ const upload_data = async () => {
     }
   );
   let data = upload_data.json();
+  alert("PRODUCT ADDED SUCCESSFULLY !");
+  window.location.reload();
   console.log(data);
+};
+//=>fetching data
+const fetch_data = async () => {
+  let response = await fetch(
+    "https://raw.githubusercontent.com/shaantanu9/Myntra-API/d53b4653c616ad53175805cad04749a38bc7fa57/db.json"
+  );
+  let response2 = await fetch(
+    "https://shrouded-beyond-89498.herokuapp.com/Products"
+  );
+  let data2 = await response2.json();
+  let data = await response.json();
+  let inventory = document.querySelector("#hari_inventory_quantity");
+  inventory.innerText = data.clothing.length + data2.length;
+  console.log(data2.length);
+};
+fetch_data();
+// redirect button
+let redirect_btn = document.querySelector("#hari_admin_to_homepage");
+redirect_btn.style.cursor = "pointer";
+redirect_btn.onclick = () => {
+  window.location.href = "#";
 };

@@ -1,0 +1,18 @@
+#hari_user_keys {
+  border-radius: 5px;
+  position: absolute;
+  width: 80px;
+  list-style: none;
+  text-align: left;
+  visibility: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /* margin-top: -30px; */
+  margin-left: -45px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  z-index: 1;
+}

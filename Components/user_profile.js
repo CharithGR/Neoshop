@@ -1,0 +1,69 @@
+const user_prof = () => {
+  let hari_current_user = JSON.parse(localStorage.getItem("Current_User"));
+  let hari_user_check =
+    JSON.parse(localStorage.getItem("is_logged_in")) || false;
+
+  let user_profile_div = document.querySelector(
+    "#hari_user_buttons_a > div:nth-child(2)"
+  );
+  let user_profile_svg = document.querySelector(
+    "#hari_user_buttons_a > div:nth-child(2) > svg"
+  );
+  if (hari_user_check === true) {
+    let ul = document.createElement("ul");
+    ul.setAttribute("id", "hari_user_keys");
+    let l1 = document.createElement("li");
+    l1.innerText = hari_current_user.name;
+    let l2 = document.createElement("li");
+    l2.setAttribute("id", "hari_logout");
+    l2.innerText = "Logout";
+    ul.append(l1, l2);
+    user_profile_div.append(ul);
+  } else if (hari_user_check === false) {
+    let ul = document.createElement("ul");
+    ul.setAttribute("id", "hari_user_keys");
+    let l1 = document.createElement("li");
+    l1.setAttribute("id", "hari_login_redirect");
+    l1.innerText = "Login";
+    let l2 = document.createElement("li");
+    l2.setAttribute("id", "hari_signup_redirect");
+    l2.innerText = "Signup";
+    ul.append(l1, l2);
+    user_profile_div.append(ul);
+  }
+  //
+  let clicks = 1;
+  user_profile_svg.onclick = () => {
+    let hidden_profile_menu = document.querySelector("#hari_user_keys");
+    if (clicks === 1) {
+      hidden_profile_menu.style.visibility = "visible";
+      clicks++;
+    } else if (clicks === 2) {
+      hidden_profile_menu.style.visibility = "hidden";
+      clicks = 1;
+    }
+  };
+  //hari_login_redirect
+  let hari_login_redirect_btn = document.querySelector("#hari_login_redirect");
+  hari_login_redirect_btn.onclick = () => {
+    console.log("Logging in...");
+    window.location.href = "#";
+  };
+  //hari_signup_redirect
+  let hari_signup_redirect_btn = document.querySelector(
+    "#hari_signup_redirect"
+  );
+  hari_signup_redirect_btn.onclick = () => {
+    console.log("Signing up...");
+    window.location.href = "#";
+  };
+  //
+  let Logout_btn = document.querySelector("#hari_logout");
+  Logout_btn.onclick = () => {
+    hari_user_check = false;
+    localStorage.removeItem("is_logged_in");
+    localStorage.removeItem("Current_User");
+    window.location.reload();
+  };
+};
+export { user_prof };

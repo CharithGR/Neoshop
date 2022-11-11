@@ -1,0 +1,77 @@
+
+
+ *{
+    box-sizing: border-box;
+}
+#navbar{
+    border: 1px solid white;
+  }
+#c_SignUp{
+    width: 30%;
+    margin: auto;
+    margin-top: 100px;
+    line-height: 150%;
+
+}
+#c_SignUp>input, form>select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+#c_SignUp p{
+    margin-left: 20px;
+    margin-top: -15px;
+    color: red;
+    fill: red;
+}        
+#c_SignUp svg{
+    width: 2%;
+    display: inline;           
+}    
+#c_SignUp input[type="submit"]{
+    color: white;
+    background-color: black;
+    margin-top: 5%; 
+    height: 40px;
+} 
+#c_SignUp input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+a{
+    color: blue;
+}
+::placeholder{
+    font-size: 115%;
+}
+#c_userType{
+    font-size: 15px;
+}
+#c_login_btn{
+    margin-left: 5px;
+}
+form>select{
+    margin-top: 10px;
+}
+
+#c_login_btn{
+display: inline-block;
+position: relative;
+}   
+#c_login_btn:after{
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 1px;
+bottom: -5px;
+left: 0;
+background-color: #a3b49b;
+color: #a3b49b;
+transform-origin:left;
+transition: transform 0.35s ease-out;
+}
+#c_login_btn:hover:after{
+transform: scaleX(1);
+}

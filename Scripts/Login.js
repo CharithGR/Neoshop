@@ -1,3 +1,10 @@
+
+
+import {navbar} from "../Components/navbar.js"
+
+
+document.getElementById("navbar").innerHTML=navbar()
+
 let form =document.getElementById("c_login_form")
 form.onsubmit=(e)=>{
     e.preventDefault();

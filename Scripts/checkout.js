@@ -3,10 +3,15 @@ document.getElementById('ak-footer').innerHTML=footer()
 let proceed_btn=document.getElementById('ak-place-order-btn')
 proceed_btn.onclick=()=>{
     UserDetails()
-}
+ }
+ let name=[]
 const UserDetails=()=>{
          let first_name=document.getElementById("ak-first-name").value;
          let last_name=document.getElementById("ak-last-name").value;
+         let full_name=first_name+" "+last_name
+         console.log(full_name)
+         name.push(full_name)
+         localStorage.setItem('Custumer_name',JSON.stringify(name))
          let state=document.getElementById('ak-region').value
          let house_no=document.getElementById('ak-hs_no').value
          let city=document.getElementById('ak-city').value

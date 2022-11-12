@@ -1,3 +1,4 @@
+
 import { navbar } from "../Components/navbar.js";
 let navbar_div = document.getElementById("Son_navbar");
 navbar_div.innerHTML = navbar();
@@ -17,6 +18,25 @@ if (hari_cart_details === null || hari_cart_details.length === 0) {
 } else {
   empty_cart_msg.style.display = "none";
 }
+=======
+import {navbar} from '../Components/navbar.js'
+let navbar_div=document.getElementById('Son_navbar')
+navbar_div.innerHTML=navbar()
+
+import {footer} from '../Components/footer.js'
+let footer_div=document.getElementById('Sn_footer')
+footer_div.innerHTML=footer();
+
+let LSdata=JSON.parse(localStorage.getItem("Cart")) || []
+let container_div=document.getElementById('So_container')
+showData(LSdata)
+
+function showData(data)
+{
+  container_div.innerHTML=null;
+
+data.forEach((ele,index)=>{
+
 
 data.forEach((ele, i) => {
   let So_container_div = document.createElement("div");
@@ -34,8 +54,13 @@ data.forEach((ele, i) => {
   let h2 = document.createElement("h2");
   h2.innerText = ele.subtitle;
 
+
   let p1 = document.createElement("p");
   p1.innerText = `Size: ${ele.size[0]}`;
+
+let p1=document.createElement('p')
+p1.innerText=`Size: ${ele.size}`
+
 
   let no_of_products_div = document.createElement("div");
   no_of_products_div.setAttribute("id", "So_no_of_products");
@@ -54,6 +79,7 @@ data.forEach((ele, i) => {
       data.length--;
       alert("You cannot buy more than 5 products for this Product");
     }
+
     no_of_products.innerHTML = data.length;
     show();
     show1();
@@ -62,6 +88,21 @@ data.forEach((ele, i) => {
   minus.onclick = () => {
     if (data.length > 1) {
       data.length--;
+
+    no_of_products.innerHTML=data.length
+    show()
+    show1()
+  }
+
+  minus.onclick=()=>{
+    if(data.length==1)
+    {
+      remove(index)
+    }
+    else if(data.length>1)
+    {
+    data.length--
+
     }
     no_of_products.innerHTML = data.length;
     show();
@@ -84,6 +125,18 @@ data.forEach((ele, i) => {
     localStorage.setItem("Cart", JSON.stringify(data.splice(i, 1)));
     So_container_div.innerHTML = null;
   };
+
+let p2=document.createElement('p')
+p2.innerText=`₹ ${ele.discounted_price}`
+
+let button1=document.createElement('button')
+button1.innerText="x Remove"
+button1.onclick=()=>{
+   remove(index)
+}
+
+price_div.append(p2,button1)
+
 
   price_div.append(p2, button1);
 
@@ -128,6 +181,7 @@ data.forEach((ele, i) => {
 
   let button_div = document.createElement("div");
 
+
   let button2 = document.createElement("button");
   button2.innerText = "Proceed to Checkout";
   button2.onclick = () => {
@@ -135,11 +189,27 @@ data.forEach((ele, i) => {
   };
   button_div.append(button2);
 
+container_div.append(So_container_div)
+
+
   let checkout_div = document.createElement("div");
   checkout_div.setAttribute("id", "So_checkout");
   checkout_div.append(price, total, button_div);
 
+
   So_container_div.append(box_div, checkout_div);
+
+}
+
+function remove(index)
+{
+  LSdata.splice(index,1)
+  localStorage.setItem("Cart",JSON.stringify(LSdata));
+  showData(LSdata)
+}
+
+
+
 
   let container_div = document.getElementById("So_container");
   container_div.append(So_container_div);

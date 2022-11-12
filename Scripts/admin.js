@@ -74,7 +74,7 @@ const upload_data = async () => {
     image_url,
   };
   let upload_data = await fetch(
-    "https://shrouded-beyond-89498.herokuapp.com/Products",
+    "https://636bda08ad62451f9fbd8076.mockapi.io/apnidukaan",
     {
       method: "POST",
       body: JSON.stringify(data_obj),

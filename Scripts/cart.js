@@ -6,10 +6,15 @@ import {footer} from '../Components/footer.js'
 let footer_div=document.getElementById('Sn_footer')
 footer_div.innerHTML=footer();
 
-let data=JSON.parse(localStorage.getItem("Cart")) || []
+let LSdata=JSON.parse(localStorage.getItem("Cart")) || []
+let container_div=document.getElementById('So_container')
+showData(LSdata)
 
-  
-data.forEach((ele,i)=>{
+function showData(data)
+{
+  container_div.innerHTML=null;
+
+data.forEach((ele,index)=>{
 
  let So_container_div=document.createElement('div')
  So_container_div.setAttribute("id","So_container1")
@@ -27,7 +32,7 @@ let h2=document.createElement('h2')
 h2.innerText=ele.subtitle
 
 let p1=document.createElement('p')
-p1.innerText=`Size: ${ele.size[0]}`
+p1.innerText=`Size: ${ele.size}`
 
 let no_of_products_div = document.createElement("div");
   no_of_products_div.setAttribute("id", "So_no_of_products");
@@ -54,7 +59,11 @@ let no_of_products_div = document.createElement("div");
   }
 
   minus.onclick=()=>{
-    if(data.length>1)
+    if(data.length==1)
+    {
+      remove(index)
+    }
+    else if(data.length>1)
     {
     data.length--
     }
@@ -80,8 +89,7 @@ p2.innerText=`₹ ${ele.discounted_price}`
 let button1=document.createElement('button')
 button1.innerText="x Remove"
 button1.onclick=()=>{
-   localStorage.setItem("Cart",JSON.stringify(data.splice(i,1)))
-   So_container_div.innerHTML=null
+   remove(index)
 }
 
 price_div.append(p2,button1)
@@ -148,10 +156,20 @@ checkout_div.append(price,total,button_div)
 
 So_container_div.append(box_div,checkout_div)
 
-let container_div=document.getElementById('So_container')
+
 container_div.append(So_container_div)
 
 })
+
+}
+
+function remove(index)
+{
+  LSdata.splice(index,1)
+  localStorage.setItem("Cart",JSON.stringify(LSdata));
+  showData(LSdata)
+}
+
 
 
 

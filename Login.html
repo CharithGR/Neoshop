@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="./Styles/Login.css">
-    <link rel="stylesheet" href="./Styles/navbar.css">
-</head>
-<body>  <div id="navbar"></div>
-        <div id="c_login">
-            <form action="" id="c_login_form">
-                <input type="email" id="c_email" placeholder="Email" required>
-                <input type="password" id="c_password" placeholder="Password" required>
-                <span>Don't have an account? <a id="ak_signUp" href="SignUp.html">SignUp</a></span>
-                <input type="submit" value="LOG IN">
-            </form>
-        </div>
-</body>
+    <link rel="stylesheet" href="./Styles/Login.css" />
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/user_profile.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+    <link rel="stylesheet" href="./Styles/underline_animation.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="hari_login_title"><h1>Log in</h1></div>
+    <div id="c_login">
+      <form action="" id="c_login_form">
+        <input type="email" id="c_email" placeholder="Email" required />
+        <input
+          type="password"
+          id="c_password"
+          placeholder="Password"
+          required
+        />
+        <span
+          >Don't have an account?
+          <a id="ak_signUp" href="SignUp.html">SignUp</a></span
+        >
+        <input type="submit" value="LOG IN" id="login_submit_btn" />
+      </form>
+    </div>
+    <div id="login_footer"></div>
+  </body>
 </html>
 <script type="module" src="./Scripts/Login.js"></script>

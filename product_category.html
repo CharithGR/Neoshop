@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Category</title>
-    <link rel="stylesheet" href="./Styles/navbar.css">
-    <link rel="stylesheet" href="./Styles/footer.css">
-    <link rel="stylesheet" href="./Styles/product_category.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+    <link rel="stylesheet" href="./Styles/product_category.css" />
+    <link rel="stylesheet" href="./Styles/underline_animation.css" />
+    <link rel="stylesheet" href="./Styles/user_profile.css" />
+  </head>
+  <body>
     <div id="navbar"></div>
 
     <div id="conatiner">
-    <div id="c_filter">
+      <div id="c_filter">
         <div id="c_category">
-            <h4>Category</h4>
-           <div><input type="checkbox" id="c_women"><span>Women</span></div> 
-           <div><input type="checkbox" id="c_men"><span>Men</span></div>
-            <div><input type="checkbox" id="c_children"><span>Children</span></div>
-            
+          <h4>Category</h4>
+          <div><input type="checkbox" id="c_women" /><span>Women</span></div>
+          <div><input type="checkbox" id="c_men" /><span>Men</span></div>
+          <div>
+            <input type="checkbox" id="c_children" /><span>Children</span>
+          </div>
         </div>
-        <div id="c_Price">   
-       <h4>Price</h4>
-       <div><input type="checkbox" id="_1_499"><span>₹1-₹499.00</span></div>
-       <div><input type="checkbox" id="_500_999"><span>₹500.00-₹999.00</span></div>
-       <div><input type="checkbox" id="_1000"><span>₹1000.00+</span></div>
-    </div>     
-    <div>
-        <h4>Brand</h4>
-        <input type="search" placeholder="Search Product Brands" id="BrandSearch">
-    </div>
-     </div>
-    
-    <div id="c_products">
-    </div>
+        <div id="c_Price">
+          <h4>Price</h4>
+          <div>
+            <input type="checkbox" id="_1_499" /><span>₹1-₹499.00</span>
+          </div>
+          <div>
+            <input type="checkbox" id="_500_999" /><span>₹500.00-₹999.00</span>
+          </div>
+          <div><input type="checkbox" id="_1000" /><span>₹1000.00+</span></div>
+        </div>
+        <div>
+          <h4>Brand</h4>
+          <input
+            type="search"
+            placeholder="Search Product Brands"
+            id="BrandSearch"
+          />
+        </div>
+      </div>
 
-</div>
-<div id="c_pagination"></div>
+      <div id="c_products"></div>
+    </div>
+    <div id="c_pagination"></div>
 
-<div id="footer"></div>
-</body>
+    <div id="footer"></div>
+  </body>
 </html>
 <script type="module" src="./Scripts/product_category.js"></script>

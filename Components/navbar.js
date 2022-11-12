@@ -12,11 +12,11 @@ const navbar = () => {
     </div>
     <!-- ALL CATEGORY IN SIDEBAR -->
     <div id="hari_sidebar_buttons">
-      <div><a href="#">Home</a></div>
-      <div><a href="#">About Us</a></div>
-      <div><a href="#">Shop</a></div>
+      <div><a href="index.html">Home</a></div>
+      <div><a href="about.html">About Us</a></div>
+      <div><a href="product_category.html">Shop</a></div>
       <div id="hari_sidebar_categories">
-        <div><a href="#">Category</a></div>
+        <div><a href="product_category.html">Category</a></div>
         <div><i class="fa-solid fa-chevron-up"></i></div>
       </div>
       <!-- ALL CATEGORIES IN SIDEBAR -->
@@ -83,7 +83,7 @@ const navbar = () => {
       </div>
       <!--  -->
       <div><a href="#">MS Smart Gadgets</a></div>
-      <div><a href="#">Contact Us</a></div>
+      <div><a href="contact_us.html">Contact Us</a></div>
       <div id="social_connect">
         <i class="fa-brands fa-facebook"></i
         ><i class="fa-brands fa-instagram"></i>
@@ -97,7 +97,7 @@ const navbar = () => {
 <!-- NAVBAR 1 -->
 <div id="hari_navbar_1">
   <div id="hari_logo">
-    <a href="#"
+    <a href="index.html"
       ><img
         src="https://i.ibb.co/YhqGBny/IMG-20221109-002722-757-01.jpg"
         alt="image is broken !"
@@ -109,7 +109,7 @@ const navbar = () => {
       <li><a href="about.html">About Us</a></li>
       <li><a href="product_category.html">Shop</a></li>
       <li id="hari_categories">
-        <a href="#">Categories</a>
+        <a href="product_category.html">Categories</a>
         <ul class="dropdown">
           <li id="hari_list_a">
             <a href="#">Clothing</a>
@@ -168,7 +168,7 @@ const navbar = () => {
           </li>
         </ul>
       </li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
     </ul>
   </div>
   <div id="hari_user_buttons_a">
@@ -296,7 +296,7 @@ const navbar = () => {
       <i class="fa-solid fa-bars"></i>
     </div>
     <div id="hari_logo_b">
-      <a href="#"
+      <a href="index.html"
         ><img
           src="https://i.ibb.co/YhqGBny/IMG-20221109-002722-757-01.jpg"
           alt="image is broken !"

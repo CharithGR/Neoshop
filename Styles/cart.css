@@ -1,71 +1,92 @@
-#Son_navbar{
-    width:100%;
-    height: 100px;
+#Son_navbar {
+  width: 100%;
+  height: 100px;
 }
 
-
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-.imge{
-    width:80%;
+.imge {
+  width: 80%;
 }
-#So_container{
-    width:80%;
-    height: auto;
-    margin: auto;
-    
+#So_container {
+  width: 80%;
+  height: auto;
+  margin: auto;
 }
-#So_container1{
-    width:95%;
-    margin-top: 30px;
-    height: auto;
-    display: flex;
-    
+#So_container1 {
+  width: 95%;
+  margin-top: 30px;
+  height: auto;
+  display: flex;
 }
-#So_box{
-    width:60%;
-    height:auto;
-    display: flex;
-    
+#So_box {
+  width: 60%;
+  height: auto;
+  display: flex;
 }
-#So_box>div{
-    width:32%;
-    gap:10px;
-    height:auto;
+#So_box > div {
+  width: 32%;
+  gap: 10px;
+  height: auto;
 }
-.So_wtf{
-    text-align: right;
+.So_wtf {
+  text-align: right;
 }
-.So_wtf>button{
-    margin-top: 50px;
+.So_wtf > button {
+  margin-top: 50px;
 }
-#So_no_of_products{
-    width:5%;
-    height:20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr) ;
-    grid-template-rows: auto;
+#So_no_of_products {
+  width: 5%;
+  height: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
-#So_checkout{
-    width:40%;
-    height:auto;
+#So_checkout {
+  width: 40%;
+  height: auto;
 }
-#So_checkout>div{
-    width:100%;
-    display:flex;
-    justify-content: space-between;
+#So_checkout > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.ttl{
-    margin-top: 50px;
+.ttl {
+  margin-top: 50px;
 }
-#So_checkout>div>button{
-    width:100%;
-    color:white;
-    background-color: black;
-    font-size: large;
-    margin-top: 30px;
+#So_checkout > div > button {
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-size: large;
+  margin-top: 30px;
 }
-#So_checkout>div>button:hover{
-    cursor: pointer;
+#So_checkout > div > button:hover {
+  cursor: pointer;
+}
+/* CART MESSAGE */
+#empty_cart_message {
+  width: 90%;
+  margin: auto;
+}
+#empty_cart_message > div:nth-child(1) {
+  width: 60%;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#empty_cart_message > div:nth-child(2) {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#empty_cart_message > div > img {
+  width: 60%;
+  margin: auto;
+  border-radius: 30px;
 }

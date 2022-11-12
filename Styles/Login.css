@@ -1,53 +1,101 @@
-*{
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  text-decoration: none;
 }
-#navbar{
-    border: 1px solid white;
+#navbar {
+  border: 1px solid white;
 }
-#c_login{
-    width: 30%;
-    margin: auto;
-    margin-top: 100px;
+#hari_login_title {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
-form{
-    width: 100%;
+#hari_login_title > h1 {
+  width: 30%;
+  margin: auto;
 }
-form input{
-    width: 100%;
-    margin-bottom: 20px;
-    height: 40px;
-    padding: 5px;
+#c_login {
+  width: 30%;
+  margin: auto;
 }
-input[type="submit"]{
-    height: 35px;
-    margin-top: 5%; 
+form {
+  width: 100%;
+}
+form input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+form input:focus {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 1px solid rgba(128, 128, 128, 0.117);
+}
+input[type="submit"] {
+  height: 45px;
+  margin-top: 5%;
+}
+::placeholder {
+  font-size: 115%;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}
 
+#ak_signUp {
+  display: inline-block;
+  position: relative;
+  color: coral;
 }
-::placeholder{
-    font-size: 115%;
+#ak_signUp:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: coral;
+  color: coral;
+  transform-origin: left;
+  transition: transform 0.35s ease-out;
 }
-input[type="submit"]:hover{
-    cursor: pointer;
+#ak_signUp:hover:after {
+  transform: scaleX(1);
+  color: coral;
 }
-
-#ak_signUp{
-    display: inline-block;
-    position: relative;
-   }   
-   #ak_signUp:after{
-   content: '';
-   position: absolute;
-   width: 100%;
-   transform: scaleX(0);
-   height: 1px;
-   bottom: -5px;
-   left: 0;
-   background-color: #a3b49b;
-   color: #a3b49b;
-   transform-origin:left;
-   transition: transform 0.35s ease-out;
-   }
-   #ak_signUp:hover:after{
-   transform: scaleX(1);
-   }
+#login_submit_btn {
+  border: 1px solid rgba(255, 127, 80, 0.123);
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+#login_submit_btn:hover {
+  outline: 5px solid rgba(255, 127, 80, 0.175);
+  color: coral;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+#lblCartCount {
+  border: 3px solid coral;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  background: coral;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  margin-left: -18px;
+}
+/*  */
+#hari_user_keys {
+  padding-right: 90px;
+}

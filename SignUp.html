@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>SignUp</title>    
-    <link rel="stylesheet" href="./Styles/navbar.css">
-    <link rel="stylesheet" href="./Styles/signUp.css">
-
-</head>
-<body>
-       
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/signUp.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+    <link rel="stylesheet" href="./Styles/user_profile.css" />
+    <link rel="stylesheet" href="./Styles/underline_animation.css" />
+  </head>
+  <body>
     <div id="navbar"></div>
-
+    <div id="hari_signup_title"><h1>Sign up</h1></div>
     <form action="" id="c_SignUp">
-        <input type="text" id="c_name" placeholder="Name" required>
-        <input type="email" id="c_email" placeholder="Email" required>
-        <input type="password" id="c_password" placeholder="Password" required>
-        <div id="c_password_check">           
-           
-        </div>
-        <input type="password" id="c_confirmPassword" placeholder="Confirm Password" required>
-        <label id="c_text" for="">Why are you creating this account</label>
-        <select name="" id="c_userType">
-            <option value="User">To Buy Products</option>
-            <option value="Admin">To Sell Products</option>
-        </select>
-        <span>Already have an account?<a id="c_login_btn" href="Login.html">Login</a> </span>
-        <input type="submit" id="c_SignUp_btn" value="Sign UP">
+      <input type="text" id="c_name" placeholder="Name" required />
+      <input type="email" id="c_email" placeholder="Email" required />
+      <input type="password" id="c_password" placeholder="Password" required />
+      <div id="c_password_check"></div>
+      <input
+        type="password"
+        id="c_confirmPassword"
+        placeholder="Confirm Password"
+        required
+      />
+      <label id="c_text" for="">Why are you creating this account</label>
+      <select name="" id="c_userType">
+        <option value="User">To Buy Products</option>
+        <option value="Admin">To Sell Products</option>
+      </select>
+      <span
+        >Already have an account?<a id="c_login_btn" href="Login.html">Login</a>
+      </span>
+      <input type="submit" id="c_SignUp_btn" value="SIGN UP" />
     </form>
-</body>
+    <div id="signup_footer"></div>
+  </body>
 </html>
 <script type="module" src="./Scripts/SignUp.js"></script>

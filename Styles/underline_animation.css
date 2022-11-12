@@ -5,15 +5,16 @@
   position: relative;
 }
 #hari_list_a > li > a::before {
+  margin: auto;
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0;
-  height: 3px;
+  height: 2px;
   color: coral;
   background-color: coral;
-  transition: width 0.15s ease-out;
+  transition: width 0.5s ease-out;
 }
 #hari_list_a > li > a:hover {
   color: coral;

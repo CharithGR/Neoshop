@@ -1,9 +1,10 @@
 import { append_cart_item_number } from "../Components/cart_badge.js";
-
+import { user_prof } from "../Components/user_profile.js";
 import { navbar } from "../Components/navbar.js";
+import { sidebar } from "../Scripts/navbar_des.js";
 let navbar_div = document.getElementById("So_navbar");
 navbar_div.innerHTML = navbar();
-append_cart_item_number();
+
 import { footer } from "../Components/footer.js";
 let footer_div = document.getElementById("So_footer");
 footer_div.innerHTML = footer();
@@ -56,3 +57,7 @@ function MinusDivs(i) {
 function plusDivs(i) {
   slideIndex = slideIndex - 1 + i;
 }
+//
+append_cart_item_number();
+user_prof();
+sidebar();

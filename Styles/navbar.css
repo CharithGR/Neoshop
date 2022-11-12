@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 #social_connect {
   margin-top: 80px;
   display: flex;
@@ -114,7 +115,6 @@ i:hover {
 #hari_sidebar_categories_list > div:hover {
   color: coral;
   cursor: pointer;
-  
 }
 #clothing_sidebar_btn,
 #footwear_sidebar_btn,
@@ -151,6 +151,7 @@ i:hover {
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  z-index: 999;
 }
 #hari_logo {
   /* border: 1px solid red; */
@@ -222,7 +223,6 @@ a {
 }
 #hari_list_a > li > a:hover {
   color: coral;
-  text-decoration: underline;
 }
 
 #hari_categories a {
@@ -375,6 +375,6 @@ a {
     display: none;
   }
 }
-#cart svg{
+#cart svg {
   width: 65%;
 }

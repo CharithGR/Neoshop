@@ -1,77 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+#navbar {
+  border: 1px solid white;
+}
+#hari_signup_title {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+#hari_signup_title > h1 {
+  width: 30%;
+  margin: auto;
+}
+#c_SignUp {
+  width: 30%;
+  margin: auto;
+  line-height: 150%;
+}
+#c_SignUp > input {
+  padding: 20px;
+}
+#c_SignUp > input,
+form > select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#c_SignUp > input:focus {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 1px solid rgba(128, 128, 128, 0.117);
+}
+#c_SignUp p {
+  margin-left: 20px;
+  margin-top: -15px;
+  color: red;
+  fill: red;
+}
+#c_SignUp svg {
+  width: 2%;
+  display: inline;
+}
+#c_SignUp input[type="submit"] {
+  color: white;
+  margin-top: 5%;
+  height: 40px;
+  background-color: black;
+  font-weight: 700;
+  outline: none;
+}
+#c_SignUp input[type="submit"]:hover {
+  cursor: pointer;
+  outline: 5px solid rgba(255, 127, 80, 0.175);
+  color: coral;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
 
-
- *{
-    box-sizing: border-box;
+a {
+  color: coral;
 }
-#navbar{
-    border: 1px solid white;
-  }
-#c_SignUp{
-    width: 30%;
-    margin: auto;
-    margin-top: 100px;
-    line-height: 150%;
-
+::placeholder {
+  font-size: 115%;
 }
-#c_SignUp>input, form>select{
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 20px;
-    height: 40px;
+#c_userType {
+  font-size: 15px;
 }
-#c_SignUp p{
-    margin-left: 20px;
-    margin-top: -15px;
-    color: red;
-    fill: red;
-}        
-#c_SignUp svg{
-    width: 2%;
-    display: inline;           
-}    
-#c_SignUp input[type="submit"]{
-    color: white;
-    background-color: black;
-    margin-top: 5%; 
-    height: 40px;
-} 
-#c_SignUp input[type="submit"]:hover{
-    cursor: pointer;
+#c_login_btn {
+  margin-left: 5px;
+}
+form > select {
+  margin-top: 10px;
 }
 
-a{
-    color: blue;
+#c_login_btn {
+  display: inline-block;
+  position: relative;
 }
-::placeholder{
-    font-size: 115%;
+#c_login_btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: coral;
+  color: #a3b49b;
+  transform-origin: left;
+  transition: transform 0.35s ease-out;
 }
-#c_userType{
-    font-size: 15px;
+#c_login_btn:hover:after {
+  transform: scaleX(1);
 }
-#c_login_btn{
-    margin-left: 5px;
+#signup_footer {
+  width: 100%;
 }
-form>select{
-    margin-top: 10px;
+/*  */
+#lblCartCount {
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  background: coral;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  margin-left: -18px;
 }
-
-#c_login_btn{
-display: inline-block;
-position: relative;
-}   
-#c_login_btn:after{
-content: '';
-position: absolute;
-width: 100%;
-transform: scaleX(0);
-height: 1px;
-bottom: -5px;
-left: 0;
-background-color: #a3b49b;
-color: #a3b49b;
-transform-origin:left;
-transition: transform 0.35s ease-out;
-}
-#c_login_btn:hover:after{
-transform: scaleX(1);
+/*  */
+#hari_user_keys {
+  padding-right: 90px;
 }

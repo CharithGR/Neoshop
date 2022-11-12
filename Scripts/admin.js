@@ -79,10 +79,11 @@ const upload_data = async () => {
       method: "POST",
       body: JSON.stringify(data_obj),
       headers: {
-        "content-type": "application/json",
+        "Content-Type": "application/json",
       },
     }
   );
+
   let data = upload_data.json();
   alert("PRODUCT ADDED SUCCESSFULLY !");
   window.location.reload();
@@ -93,10 +94,12 @@ const fetch_data = async () => {
   let response = await fetch(
     "https://raw.githubusercontent.com/shaantanu9/Myntra-API/d53b4653c616ad53175805cad04749a38bc7fa57/db.json"
   );
+
   let response2 = await fetch(
-    "https://shrouded-beyond-89498.herokuapp.com/Products"
+    "https://636bda08ad62451f9fbd8076.mockapi.io/apnidukaan"
   );
   let data2 = await response2.json();
+  console.log(data2);
   let data = await response.json();
   let inventory = document.querySelector("#hari_inventory_quantity");
   inventory.innerText = data.clothing.length + data2.length;

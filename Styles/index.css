@@ -1,100 +1,4 @@
 
-#So_navbar {
-  width: 100%;
-  height: 80px;
-  position: sticky;
-}
-#So_carousel {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#So_carousel > img {
-  width: 100%;
-  height: 500px;
-}
-#So_cut {
-  display: flex;
-  justify-content: space-evenly;
-}
-#So_cut > p {
-  text-decoration: line-through;
-}
-#So_cut > h3 {
-  color: #ff6f61;
-}
-
-#So_btn > button:hover {
-  cursor: pointer;
-  background-color: white;
-}
-#So_btn > button {
-  font-size: 30px;
-  background-color: #7f878e;
-}
-#So_btt {
-  position: absolute;
-  border: none;
-  width: 3%;
-}
-#So_bpp {
-  width: 15%;
-  height: 50px;
-  position: absolute;
-  left: 45%;
-  color: white;
-  background-color: black;
-  font-size: large;
-}
-#So_bpt {
-  position: absolute;
-  width: 3%;
-  left: 97%;
-  top: 50%;
-  border: none;
-}
-
-#So_bnt > button:hover {
-  cursor: pointer;
-  background-color: white;
-}
-#So_bnt > button {
-  font-size: 30px;
-  background-color: #7f878e;
-}
-#So_container {
-  width: 100%;
-  display: grid;
-  margin: auto;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  gap: 10px;
-}
-#So_container > img {
-  width: 100%;
-
-  opacity: 0.6;
-  height: 300px;
-  background-size: cover;
-}
-#So_container > img:hover {
-  cursor: pointer;
-  opacity: 1;
-}
-#So_cloth {
-  height: 150px;
-  text-align: center;
-  margin: auto;
-}
-#So_category {
-  height: 170px;
-  width: 80%;
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-=======
 #So_navbar{
     width:100%;
     height: 80px;
@@ -113,17 +17,6 @@
     height: 500px;
     
 }
-#So_carousel>div{
-    width:20%;
-    
-}
-
-
-#So_left_btn:hover{
-    cursor: pointer;
-    background-color: white;
-}
-
 
 #So_left_btn{
     top:50%;
@@ -132,6 +25,7 @@
     position: absolute;
     border: none;
     width:3%;
+    
 }
 #So_middle_btn{
     width:15%;
@@ -153,6 +47,15 @@
     font-size: 30px;
     background-color: #7F878E;
 }
+
+
+#So_left_btn:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+
+
 
 #So_right_btn:hover{
     cursor: pointer;

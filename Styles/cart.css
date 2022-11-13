@@ -90,3 +90,60 @@ h1 {
   margin: auto;
   border-radius: 30px;
 }
+
+
+
+
+
+
+
+
+
+#So_container{
+  display: flex;
+  justify-content: space-around;
+  row-gap: 50px;
+}
+#So_container img{
+  display: block;
+  margin-right: 50px;
+}
+.displayCart{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#no_of_products_div{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#no_of_products_div button{
+  background: white;
+  border: none;
+  font-weight: 600;
+
+}
+h3{
+  display: inline;
+}
+#c_TotalAmountDisplay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+#heading{
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+#checkoutbtn{
+  height: 40px;
+  margin-top: 25px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+}

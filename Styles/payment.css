@@ -1,77 +1,73 @@
-
-#ak-checkout-head{
-    width: 100%;
-    text-align: center;
-    margin-top: 60px;
-
+#navbar_append_div {
+  border: 1px solid transparent;
 }
-sup{
-    color: red;
+#ak-checkout-head {
+  width: 100%;
+  text-align: center;
+  margin-top: 140px;
+}
+sup {
+  color: red;
 }
 /* for order div */
-#ak-order-div p{
-    font-family: sans-serif;
-       
+#ak-order-div p {
+  font-family: sans-serif;
 }
 
-#ak-order-div input{
-    width: 100%;
-     height: 50px;
-     box-sizing: border-box;
-     border: 1px solid rgb(218, 218, 218);
-     padding: 5px;
+#ak-order-div input {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid rgb(218, 218, 218);
+  padding: 5px;
 }
-#ak-order-div button{
-    width: 100%;
-    height: 50px;
-    box-sizing: border-box;
-    border: 1px solid rgb(218, 218, 218);
-    padding: 5px;
+#ak-order-div button {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid rgb(218, 218, 218);
+  padding: 5px;
 }
-
 
 /* *********** */
-#ak-order-div{
-    width: 40%;
-    margin: auto;
+#ak-order-div {
+  width: 40%;
+  margin: auto;
 }
-#ak-accepted-cards{
-    width: 100%;
+#ak-accepted-cards {
+  width: 100%;
 }
-#ak-order-div img{
- width: 15%;
- margin-left: 5px;
-
+#ak-order-div img {
+  width: 15%;
+  margin-left: 5px;
 }
-#ak-cart-cvv-div{
-    display: flex;
-    justify-content: space-between;
-
+#ak-cart-cvv-div {
+  display: flex;
+  justify-content: space-between;
 }
-#ak-cart-cvv-div>div{
-    width: 45%;
-    justify-content: space-between;
+#ak-cart-cvv-div > div {
+  width: 45%;
+  justify-content: space-between;
 }
-ul{
-    list-style-type:square;
-    line-height: 200%;
-    color: rgb(100, 97, 97);
-
+ul {
+  list-style-type: square;
+  line-height: 200%;
+  color: rgb(100, 97, 97);
 }
 
-#ak-footer{
-    margin-top: 10px;
+#ak-footer {
+  margin-top: 10px;
 }
-#ak-order-notes{
-    border: 2px solid;
-    border-radius: 3px ;
-    margin-top: 30px;
+#ak-order-notes {
+  border: 2px solid;
+  border-radius: 3px;
+  margin-top: 30px;
 }
-#ak-place-order-btn{
-    margin-top: 20px;
-    font-size: 15px;
-    height: 45px;
+#ak-place-order-btn {
+  margin-top: 20px;
+  font-size: 15px;
+  height: 45px;
 }
-#ak-place-order-btn:hover{
-    background-color: antiquewhite;
+#ak-place-order-btn:hover {
+  background-color: antiquewhite;
 }

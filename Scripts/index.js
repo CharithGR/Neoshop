@@ -4,7 +4,9 @@ import { navbar } from "../Components/navbar.js";
 import { sidebar } from "../Scripts/navbar_des.js";
 let navbar_div = document.getElementById("So_navbar");
 navbar_div.innerHTML = navbar();
+
 append_cart_item_number();
+sidebar();
 
 import { footer } from "../Components/footer.js";
 let footer_div = document.getElementById("So_footer");
@@ -59,4 +61,3 @@ function plusDivs(i) {
   slideIndex = slideIndex - 1 + i;
 }
 //
-sidebar();

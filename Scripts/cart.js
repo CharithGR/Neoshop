@@ -272,6 +272,13 @@ display(cart)
 
 
 const displayTotalCartAmount=(data)=>{
+
+
+if(cart.length>0){
+
+
+
+
   document.getElementById("c_TotalAmountDisplay").innerHTML=null
 
   let head =document.createElement("h3")
@@ -294,5 +301,6 @@ btn.onclick = () =>{
   window.location.href="checkout.html"
 }
 
+}
 
 displayTotalCartAmount(cart)

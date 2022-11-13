@@ -52,8 +52,16 @@ function Purchase_data_append(){
           let order_num=document.createElement('td')
           order_num.innerText='#'+(i+2)
           let date=document.createElement('td')
-          date.innerText="20Sep 2021"
 
+          let currDate = new Date();
+          let date_day = currDate.getDate();
+          let month = currDate.getMonth();
+           let year = currDate.getFullYear();
+          let final = `${date_day}/${month}/${year}`;
+          date.innerText=final
+
+           let nameOfPro=document.createElement('td')
+           nameOfPro.innerText=el.title
           let fullfill=document.createElement('td')
           fullfill.innerText="Order Confirmed"
           let payment_status=document.createElement('td')
@@ -63,7 +71,7 @@ function Purchase_data_append(){
           let user_name=document.createElement('td');
           user_name.innerText=el.name
 
-          tr.append(order_num,date,user_name,fullfill,payment_status,total)
+          tr.append(order_num,date,user_name,nameOfPro,fullfill,payment_status,total)
        tbody.append(tr)
       })
 }

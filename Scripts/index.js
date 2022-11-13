@@ -44,12 +44,12 @@ function slideshow() {
   }, 3000);
 }
 
-let button = document.getElementById("So_btt");
-button.onclick = () => {
+let div = document.querySelector("#So_left > button");
+div.onclick = () => {
   MinusDivs(-1);
 };
 
-let button1 = document.getElementById("So_bpt");
+let button1 = document.querySelector("So_right > button");
 button1.onclick = () => {
   plusDivs(1);
 };

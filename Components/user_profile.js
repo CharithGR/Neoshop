@@ -23,7 +23,19 @@ const user_prof = () => {
     l2.onclick = () => {
       hari_user_logout();
     };
+    let l3 = document.createElement("li");
+    l3.setAttribute("id", "redirect_to_admin_page");
+    l3.style.cursor = "pointer";
+    l3.onclick = () => {
+      window.location.href = "admin.html";
+    };
+    l3.innerText = "Admin";
+    let crnt_user = JSON.parse(localStorage.getItem("Current_User"));
+    if (crnt_user.userType == "Admin") {
+      ul.append(l3);
+    }
     ul.append(l1, l2);
+
     user_profile_div.append(ul);
   } else if (hari_user_check === false) {
     let ul = document.createElement("ul");

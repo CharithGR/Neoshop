@@ -110,5 +110,5 @@ fetch_data();
 let redirect_btn = document.querySelector("#hari_admin_to_homepage");
 redirect_btn.style.cursor = "pointer";
 redirect_btn.onclick = () => {
-  window.location.href = "#";
+  window.location.href = "index.html";
 };

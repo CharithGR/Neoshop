@@ -5,7 +5,7 @@ import { sidebar } from "../Scripts/navbar_des.js";
 let navbar_div = document.getElementById("So_navbar");
 navbar_div.innerHTML = navbar();
 append_cart_item_number();
-user_prof();
+
 import { footer } from "../Components/footer.js";
 let footer_div = document.getElementById("So_footer");
 footer_div.innerHTML = footer();
@@ -26,7 +26,7 @@ img.src = images[0];
 carousel_div.append(img);
 
 slideshow();
-
+user_prof();
 function slideshow() {
   setInterval(function () {
     if (slideIndex == images.length) {
@@ -59,5 +59,4 @@ function plusDivs(i) {
   slideIndex = slideIndex - 1 + i;
 }
 //
-
 sidebar();

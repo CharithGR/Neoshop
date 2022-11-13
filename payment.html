@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment</title>
-    <link rel="stylesheet" href="./Styles/payment.css">
-    <link rel="stylesheet" href="./Styles/footer.css">
-    <script src="https://kit.fontawesome.com/24c494a6b6.js"
-    crossorigin="anonymous"></script>
-    
-</head>
-<body>
-         <!-- ************ -->
-         <div id="ak-order-div">
-        <div id="ak-checkout-head"><h2>Checkout</h2></div>
+    <link rel="stylesheet" href="./Styles/payment.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/underline_animation.css" />
+    <link rel="stylesheet" href="./Styles/user_profile.css" />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="navbar_append_div"></div>
+    <!-- ************ -->
+    <div id="ak-order-div">
+      <div id="ak-checkout-head"><h2>Checkout</h2></div>
 
-            <h4>Cart Details</h4>
-            <div id="ak-accepted-cards">
-                <p>Accepted Cards</p>
-                <img src="./Images/paypal.png" alt="">
-                <img src="./Images/rupay.jpg" alt="">
-                <img src="./Images/mastercart (2).jpg" alt="">
-                <img src="./Images/visa.jpg" alt="">
-            </div>
-            <div id="ak-cart-holder-div">
-                  <p>Name Of Cart Holder<sup>*</sup></p>
-                  <input type="text" name="" id="ak-cart-holder" placeholder="Cart Holder">
-            </div>
-            <div id="ak-cart-number-div">
-                  <p>Credit Card Number<sup>*</sup></p>
-                  <input type="number" name="" id="ak-cart-number" placeholder="2222-3333-4444">
-            </div>
-            <div id="ak-cart-exp-month-div">
-                  <p>Exp Month<sup>*</sup></p>
-                  <input type="text" name="" id="ak-cart-exp-month" placeholder="Enter Month">
-            </div>
-            <div id="ak-cart-cvv-div">
-                   <div>
-                          <p>Exp Year<sup>*</sup></p>
-                          <input type="number" name="" id="ak-cart-exp-year" placeholder="Enter Year">
-                   </div>
-                   <div>
-                          <p>CVV<sup>*</sup></p>
-                          <input type="number" name="" id="ak-cart-cvv" placeholder="1234">
-                   </div>
-            </div>
-            <button id="ak-place-order-btn">Place order</button>
-            <div id="ak-order-notes">
-                    <ul>
-                          <li>Guaranteed Delivery with 100% Original Products</li>
-                          <li>Cod is not Available on Some Categories</li>
-                          <li>For Online Payment Extra ₹5% Discount On Orders Above ₹500</li>
-                          <li>EMI Option Available</li>
-                          <li>To Avail More Bank Options on EMI Purchase Above RS. 3000</li>
-                          <li>Free Delivery On Orders Above 500 For Online Payment Free Delivery Available On All Orders</li>
-                          <li>Below ₹500 Cash On Delivery Charges ₹49</li>
-                    </ul>
-            </div>
-          </div>
-          <div id="ak-footer">
-
+      <h4>Cart Details</h4>
+      <div id="ak-accepted-cards">
+        <p>Accepted Cards</p>
+        <img src="./Images/paypal.png" alt="" />
+        <img src="./Images/rupay.jpg" alt="" />
+        <img src="./Images/mastercart (2).jpg" alt="" />
+        <img src="./Images/visa.jpg" alt="" />
+      </div>
+      <div id="ak-cart-holder-div">
+        <p>Name Of Cart Holder<sup>*</sup></p>
+        <input
+          type="text"
+          name=""
+          id="ak-cart-holder"
+          placeholder="Cart Holder"
+        />
+      </div>
+      <div id="ak-cart-number-div">
+        <p>Credit Card Number<sup>*</sup></p>
+        <input
+          type="number"
+          name=""
+          id="ak-cart-number"
+          placeholder="2222-3333-4444"
+        />
+      </div>
+      <div id="ak-cart-exp-month-div">
+        <p>Exp Month<sup>*</sup></p>
+        <input
+          type="text"
+          name=""
+          id="ak-cart-exp-month"
+          placeholder="Enter Month"
+        />
+      </div>
+      <div id="ak-cart-cvv-div">
+        <div>
+          <p>Exp Year<sup>*</sup></p>
+          <input
+            type="number"
+            name=""
+            id="ak-cart-exp-year"
+            placeholder="Enter Year"
+          />
         </div>
-</body>
+        <div>
+          <p>CVV<sup>*</sup></p>
+          <input type="number" name="" id="ak-cart-cvv" placeholder="1234" />
+        </div>
+      </div>
+      <button id="ak-place-order-btn">Place order</button>
+      <div id="ak-order-notes">
+        <ul>
+          <li>Guaranteed Delivery with 100% Original Products</li>
+          <li>Cod is not Available on Some Categories</li>
+          <li>For Online Payment Extra ₹5% Discount On Orders Above ₹500</li>
+          <li>EMI Option Available</li>
+          <li>To Avail More Bank Options on EMI Purchase Above RS. 3000</li>
+          <li>
+            Free Delivery On Orders Above 500 For Online Payment Free Delivery
+            Available On All Orders
+          </li>
+          <li>Below ₹500 Cash On Delivery Charges ₹49</li>
+        </ul>
+      </div>
+    </div>
+    <div id="ak-footer"></div>
+  </body>
 </html>
 <script type="module" src="./Scripts/payment.js"></script>

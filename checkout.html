@@ -1,81 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-    <link rel="stylesheet" href="./Styles/checkout.css">
-    <link rel="stylesheet" href="./Styles/navbar.css">
-    <link rel="stylesheet" href="./Styles/footer.css">
-    <script src="https://kit.fontawesome.com/24c494a6b6.js"
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Styles/checkout.css" />
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+    <link rel="stylesheet" href="./Styles/user_profile.css" />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="navbar_append_div"></div>
 
-</head>
-<body>
+    <div id="ak-checkout-div">
+      <div id="ak-checkout-head"><h2>Checkout</h2></div>
 
-      <div id="ak-checkout-div">
-        <div id="ak-checkout-head"><h2>Checkout</h2></div>
-
-          <h4>Billing details</h4>
-           <div id="ak-name">
-            <!-- name -->
-            <div>
-                    <p>First name <sup>*</sup></p>
-                    <input type="text" name="" id="ak-first-name">
-            </div>
-            <div id="ak-last-name-div">
-                    <p>Last name<sup>*</sup></p>
-                   <input type="text" name="" id="ak-last-name">
-            </div>
-           </div>
-           <div>
-                     <p>Company name (optional)</p>
-                     <input type="text" name="" id="ak-com-name">
-           </div>
-           <div>     
-                    <p>State/Region<sup>*</sup></p>
-                    <input type="text" name="" id="ak-region">
-           </div>
-           <div>
-                    <p>Street address<sup>*</sup></p>
-                    <input type="text" name="" id="ak-hs_no" placeholder="House number and street name">
-                    <br><br>
-                    <input type="text" name="" id="" placeholder="Apartment, slute,unit,etc.(optional)">
-           </div>
-           <div>     
-                    <p>Town/City<sup>*</sup></p>
-                    <input type="text" name="" id="ak-city">
-          </div>
-          <div>     
-                    <p>PIN Code<sup>*</sup></p>
-                    <input type="number" name="" id="ak-pin-code">
-          </div>
-          <div>     
-                   <p>Phone<sup>*</sup></p>
-                   <input type="number" name="" id="ak-phone">
-         </div>
-           <h4>Additional information</h4>
-         <div> 
-                   <p>Order notes(optional)</p>
-                   <textarea name="ak-notes" id="">Notes about your order e.g. Special notes for delivery</textarea>
-         </div>
-          <div>
-                   <select name="" id="ak-select-card-type">
-                        <option value="">Select Payment Option</option>
-                        <option value="">Cash On Delivery (Not Available)</option>
-                        <option value="Credit">Credit Card</option>
-                        <option value="Debit">Debit Card</option>
-
-                   </select>
-          </div>
-          <div>
-                   <button id="ak-place-order-btn">Proceed To Payment</button>
-          </div>
+      <h4>Billing details</h4>
+      <div id="ak-name">
+        <!-- name -->
+        <div>
+          <p>First name <sup>*</sup></p>
+          <input type="text" name="" id="ak-first-name" />
         </div>
-   <div id="ak-footer">
-
-   </div>
-</body>
+        <div id="ak-last-name-div">
+          <p>Last name<sup>*</sup></p>
+          <input type="text" name="" id="ak-last-name" />
+        </div>
+      </div>
+      <div>
+        <p>Company name (optional)</p>
+        <input type="text" name="" id="ak-com-name" />
+      </div>
+      <div>
+        <p>State/Region<sup>*</sup></p>
+        <input type="text" name="" id="ak-region" />
+      </div>
+      <div>
+        <p>Street address<sup>*</sup></p>
+        <input
+          type="text"
+          name=""
+          id="ak-hs_no"
+          placeholder="House number and street name"
+        />
+        <br /><br />
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Apartment, slute,unit,etc.(optional)"
+        />
+      </div>
+      <div>
+        <p>Town/City<sup>*</sup></p>
+        <input type="text" name="" id="ak-city" />
+      </div>
+      <div>
+        <p>PIN Code<sup>*</sup></p>
+        <input type="number" name="" id="ak-pin-code" />
+      </div>
+      <div>
+        <p>Phone<sup>*</sup></p>
+        <input type="number" name="" id="ak-phone" />
+      </div>
+      <h4>Additional information</h4>
+      <div>
+        <p>Order notes(optional)</p>
+        <textarea name="ak-notes" id="">
+Notes about your order e.g. Special notes for delivery</textarea
+        >
+      </div>
+      <div>
+        <select name="" id="ak-select-card-type">
+          <option value="">Select Payment Option</option>
+          <option value="">Cash On Delivery (Not Available)</option>
+          <option value="Credit">Credit Card</option>
+          <option value="Debit">Debit Card</option>
+        </select>
+      </div>
+      <div>
+        <button id="ak-place-order-btn">Proceed To Payment</button>
+      </div>
+    </div>
+    <div id="ak-footer"></div>
+  </body>
 </html>
-<script type="module" src='./Scripts/checkout.js'></script>
+<script type="module" src="./Scripts/checkout.js"></script>

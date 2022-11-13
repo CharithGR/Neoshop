@@ -59,6 +59,8 @@ class User {
       );
 
       data = await response.json();
+      alert("Account created successfully !");
+      window.location.href = "Login.html";
       console.log(data);
     } else {
       alert("Account with this email already exists");

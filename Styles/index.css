@@ -8,7 +8,7 @@
 }
 #So_carousel{
     width: 100%;
-    height: auto;
+    height: 0px;
 }
 
 
@@ -17,53 +17,53 @@
     height: 500px;
     
 }
-
-#So_left_btn{
-    top:50%;
-    font-size: 30px;
-    background-color: #7F878E;
-    position: absolute;
-    border: none;
-    width:3%;
+#sonu{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width:100%;
+}
+#So_left{
+    margin-top:250px;
+    
     
 }
-#So_middle_btn{
-    width:15%;
-    height:50px;
-    cursor: pointer;
-    position: absolute;
-    left:45%;
-    top:50%;
-    color: white;
-    background-color: black;
-    font-size:  large;
-}
-#So_right_btn{
-    position: absolute;
-    width:3%;
-    left:97%;
-    top:50%;
-    border: none;
-    font-size: 30px;
+#So_left>button{
     background-color: #7F878E;
+    font-size: 40px;
+    border: none;
 }
-
-
-#So_left_btn:hover{
+#So_left>button:hover{
     cursor: pointer;
     background-color: white;
 }
-
-
-
-
-#So_right_btn:hover{
+#So_middle{
+    margin-top: 250px;
+    
+}
+#So_middle>a>button{
+    font-size: large;
+    width:130%;
+    border: none;
+    background-color: #1F1F1F;
+    color: white;
+    height:50px;
+}
+#So_middle>a>button:hover{
+    cursor: pointer;
+}
+#So_right{
+    margin-top: 250px;
+}
+#So_right>button{
+    background-color: #7F878E;
+    font-size: 40px;
+    border: none;
+}
+#So_right>button:hover{
     cursor: pointer;
     background-color: white;
 }
-
-
-
 
 
 #So_container{
